@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storymap</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Font Awesome!-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    
+    <!--Main Css-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122927915-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122927915-1');
+    </script>
+
+
+</head>
+
+<body>
+    <!-- Desktop Site container -->
+    <div class="nav-container">
+        <div class="navPanel" data-spy="scroll" data-target="#list-example" data-offset="300">
+            <div class="navPanelHeader">
+                <img class='header_img' src='' alt='title' width='75' height='75'>
+                <div class="navPanelTitles">
+                    <span class="title">Storymap</span><br>
+                    <span class="subtitle">Storymap</span>
+                </div>
+            </div>
+        </div>
+        <div class="navDots">
+            <div class="navDots-contain"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Site Container -->   
+    <div class="mob-nav container-fluid">
+        <!-- This will be a carousel -->
+        <div class="row mob-nav-row">
+            <div id="myCarousel" class="carousel slide" data-ride="">
+                <!-- slide items -->
+                <div class="carousel-inner">
+                    
+                </div>
+    
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailDiv" class=""></div>
+    <!-- Esri Divs -->
+    <div id="mapDiv">
+        
+    </div>
+    
+    <!-- Bootstrap type stuff -->
+    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Esri API -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.6/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.6/"></script>
+
+    <!-- Page Controllers -->
+    <script src="js_files/main_controller.js"></script>     <!--Moved from below-->
+
+    <script src="js_files/map.js"></script>
+    <script src="js_files/map_controller.js"></script>
+    <!-- <script src="js_files/main_controller.js"></script>    Moved to above-->
+    <script src="js_files/legend_build.js"></script>
+    <script src="js_files/main.js"></script>
+    
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+@function z($layer) {
+    @if not map-has-key($z-layers, $layer) {
+      @warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+    }
+  
+    @return map-get($z-layers, $layer);
+}
+
+$z-layers: (
+    "mob_navbar":       200,
+    "mob_item":         150,
+    "mapDiv":           100,
+    "desk_navHead":     50,
+    "desk_legend":      200,
+);

@@ -1,0 +1,407 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+}
+
+#mapDiv {
+  background-color: #85a9ac;
+}
+
+#park-list li {
+  font-weight: 475;
+}
+
+#park-list li:hover {
+  background-color: rgba(255, 247, 125, 0.9);
+  font-weight: bold;
+}
+
+.esri-legend__layer-caption {
+  display: none !important;
+}
+
+.esri-popup__header {
+  background-color: #b67844;
+  color: black;
+  font-weight: bolder;
+}
+
+.esri-popup__icon {
+  color: black;
+  font-weight: bolder;
+}
+
+.esri-popup__main-container {
+  max-width: 300px;
+}
+
+.esri-popup__content {
+  font-size: 14px;
+}
+
+.nav-container {
+  display: none;
+}
+
+.navDots {
+  display: none;
+}
+
+.navPanelHeader {
+  display: none;
+}
+
+#detailDiv {
+  background-color: #5b717a;
+}
+
+.esri-layer-list {
+  display: none;
+}
+
+.esri-view-root {
+  z-index: inherit;
+}
+
+#mapDiv, #detailDiv {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  height: calc(100% - 100px);
+  z-index: 100;
+}
+
+.mob-nav {
+  background-color: white;
+  z-index: 200;
+  position: absolute;
+  top: 0px;
+}
+
+.mob-nav-row {
+  height: 100px;
+}
+
+.car-item-container {
+  z-index: 150;
+  position: absolute;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #35602d;
+  width: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: -10px;
+}
+
+.mob_title_click {
+  color: #35602d;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  width: 76%;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 12%;
+  margin-right: 12%;
+  border-radius: 3px;
+  background-color: #b67844;
+}
+
+#myCarousel {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100px;
+}
+
+.carousel-inner {
+  overflow: hidden;
+}
+
+.new-wave-legend {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  max-width: 50%;
+}
+
+#detailDiv .image {
+  background-image: url("../Img/CM_pg1.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.watermark {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.7em;
+  border-top-left-radius: 3px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 1025px) {
+  body {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .mob-nav {
+    display: none;
+  }
+  .nav-container {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 500px;
+    color: #35602d;
+    list-style: none;
+    overflow: hidden;
+    border-right: 1px solid white;
+  }
+  .navPanel {
+    position: relative;
+    top: 0px;
+    right: -17px;
+    left: 40px;
+    padding: 25px;
+    padding-bottom: 300px;
+    bottom: 0px;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+  }
+  .navPanel .mySlide {
+    opacity: 0.5;
+  }
+  .navPanel .my-slide-list {
+    padding-right: 17px;
+  }
+  .navPanel .activeSlide {
+    opacity: 1;
+  }
+  .navPanel p {
+    display: block;
+    padding-left: 15px;
+    margin-bottom: 0.5em;
+  }
+  .navPanel ul {
+    list-style: square;
+    padding-left: 30px;
+  }
+  .navPanel ul li {
+    padding-bottom: 5px;
+  }
+  .navPanelHeader {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    --leftMargin: calc(500px - 40px);
+    width: var(--leftMargin);
+    height: 100px;
+    border-right: 1px solid white;
+    background-color: white;
+    margin-left: 40px;
+    z-index: 50;
+    padding: 10px 25px;
+    border-bottom: 1px solid #35602d;
+  }
+  .navPanelHeader img {
+    float: left;
+  }
+  .navPanelHeader .navPanelTitles {
+    padding-left: 10px;
+    float: left;
+    height: calc($nav-header-height-20px);
+    margin: 0px 0px;
+  }
+  .navPanelHeader span.title {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    font-size: 1.9em;
+    color: #b67844;
+  }
+  .navPanelHeader span.subtitle {
+    font-size: 1.4em;
+  }
+  .watermark {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top-left-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 0.9em;
+  }
+  .navTitle {
+    font-weight: bold;
+    font-size: 1.6em;
+    text-align: left;
+    padding-top: 100px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: #35602d;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+  .navTitleBubble {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px 0px;
+    background-color: rgba(223, 193, 169, 0.75);
+  }
+  .pTitle {
+    padding-top: 80px;
+    margin-top: -60px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .mySlide h4 {
+    color: #35602d;
+    margin-bottom: 0.25em;
+    margin-top: 1.5em;
+  }
+  .navParagraph {
+    font-size: 1em;
+    padding-top: 10px;
+  }
+  .quote {
+    font-style: italic;
+    font-size: 0.9em;
+    border-radius: 10%;
+    margin: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 25px;
+  }
+  .lowlight {
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+  }
+  .bulletpoint {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: -15px;
+  }
+  .navDots {
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    margin: auto;
+    width: 40px;
+    background-color: #b67844;
+  }
+  .navDots .navDots-contain {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .navDots .list-group-item {
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+  }
+  .list-group-item.active {
+    color: #e4da52;
+  }
+  .list-group-item-action {
+    color: #dfc1a9;
+  }
+  .new-wave-legend {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    z-index: 200;
+    background-color: white;
+    color: #35602d;
+    border-radius: 3px;
+    min-width: 200px;
+    font-size: 0.8em;
+  }
+  .new-wave-legend .legend-item-contain {
+    padding: 0px 15px;
+    padding-top: 15px;
+    display: none;
+  }
+  .new-wave-legend span {
+    padding-left: 5px;
+  }
+  .new-wave-legend .legend_head {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .new-wave-legend .legendBttn {
+    background-color: #b67844;
+    color: #dfc1a9;
+  }
+  #mapDiv, #detailDiv {
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    width: calc(100% - 500px);
+    height: 100%;
+  }
+  #detailDiv {
+    background-color: #5b717a;
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .esri-layer-list {
+    display: block;
+  }
+  .esri-legend {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

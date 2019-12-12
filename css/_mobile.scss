@@ -1,0 +1,130 @@
+@import '_theme.scss';
+@import '_zindexes.scss';
+$mob-nav-height: 100px;
+
+
+// hiding the Desktop divs
+.nav-container {
+    display: none;
+}
+
+.navDots {
+    display: none;
+}
+
+.navPanelHeader {
+    display: none;
+}
+
+#detailDiv {
+    background-color: rgb(91, 113, 122);
+  }
+
+// ESRI OVERRIDE
+.esri-layer-list {
+    display: none;
+}
+
+.esri-view-root {
+    z-index: inherit;
+}
+
+
+// beginning mobile formatting
+
+#mapDiv, #detailDiv {
+    position: relative;
+    top: $mob-nav-height;
+    width: 100%;
+    height: calc(100% - #{$mob-nav-height});
+    z-index: z("mapDiv");
+}
+
+.mob-nav {
+    background-color: $nav-background-rgb;
+    z-index: z("mob_navbar");
+    position: absolute;
+    top: 0px;
+    
+}
+
+.mob-nav-row {
+    height: $mob-nav-height;
+}
+
+.car-item-container {
+    z-index: z("mob_item");
+    position: absolute;
+    top: $mob-nav-height;
+    background-color: $nav_background_rgba;
+    color: $text-color;
+    width: 100%;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: -10px;
+}
+
+.mob_title_click {
+    color: $panel_title;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    width: 76%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-radius: 3px;
+    background-color: $nav_button_rgb;
+
+}
+
+
+#myCarousel {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: $mob-nav-height;
+    
+}
+
+.carousel-inner {
+    //overflow-y: scroll;
+    overflow: hidden;
+
+    //height: 100%;
+}
+
+.new-wave-legend {
+    position: absolute;
+    top: $mob-nav-height;
+    right: 0px;
+    max-width: 50%;
+}
+
+#detailDiv {
+    .image {
+        background-image:url('../Img/CM_pg1.jpg');
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.watermark {
+    background-color: rgba(0,0,0,0.8);
+    padding: 8px;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.7em;
+    border-top-left-radius: 3px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: fit-content;
+}

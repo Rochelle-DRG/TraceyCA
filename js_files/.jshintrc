@@ -1,0 +1,10 @@
+{
+    "undef": true,
+    "unused": true,
+    "globals": {
+      "$": true,
+      "mapPoints": true,
+      "view": true,
+      "map": true
+    }
+  }

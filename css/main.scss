@@ -1,0 +1,70 @@
+@import '_theme.scss';
+
+*{ box-sizing: border-box; }
+
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+#mapDiv {
+    background-color: rgb(133, 169, 172);
+}
+
+#park-list li {
+    font-weight: 475;
+  }
+#park-list li:hover{
+    background-color: rgba(255, 247, 125, .9);
+    font-weight: bold;
+} 
+
+
+
+// ESRI Overrides
+.esri-legend__layer-caption {
+    display: none !important;
+}
+
+.esri-popup__header {
+    background-color: $nav_button_rgb;
+    color: black;
+    font-weight: bolder;
+}
+
+.esri-popup__icon {
+    color: black;
+    font-weight: bolder;
+}
+
+.esri-popup__main-container {
+    max-width: 300px;
+}
+
+.esri-popup__content {
+    font-size: 14px;
+}
+
+@import '_mobile.scss';
+
+// @media only screen and (min-width:768px) {
+//     @import '_tablet.scss';
+// }
+
+@media only screen and (min-width:1025px) {
+    @import '_desktop.scss';
+}

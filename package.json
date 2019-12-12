@@ -1,0 +1,17 @@
+{
+  "name": "storymaps2018",
+  "version": "1.0.0",
+  "description": "Storymaps",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bill",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.5.0",
+    "gulp-sass": "^4.0.1",
+    "jshint": "^2.9.5"
+  }
+}

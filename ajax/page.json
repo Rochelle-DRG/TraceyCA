@@ -1,0 +1,307 @@
+{
+    "page_info": {
+      "page_title": "Tracy, California - Urban Forest Management Plan",
+      "nav_header_img" : "img/Logo_square_small.jpg",
+      "nav_header_text": "Tracy, California",
+      "nav_header_subtext": "Urban Forest Master Plan",
+      "rest_legend_json_url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer?f=pjson"
+    },
+    "Layers": {
+        "Layer1": {
+            "title": "Sammamish Boundary",
+            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/0",
+            "type": "feature",
+            "opacity": 1.0,
+            "layername": "Sammamish Boundary",
+            "legend": false,
+            "popup" : false,
+            "popupContent": [""],
+            "order" : 0
+        },
+        "Layer2": {
+            "title": "ROWtrees",
+            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/1",
+            "type": "feature",
+            "opacity": 1.0,
+            "layername": "ROWtrees",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Tree Type: {Type}"
+            ],
+            "order" : 1
+        },
+        "Layer3": {
+            "title": "Park Tree Canopy",
+            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/2",
+            "type": "feature",
+            "opacity": 1.0,
+            "layername": "Park Tree Canopy",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Name: {NAME}",
+                "Type: {TYPE}",
+                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}"
+            ],
+            "order" : 2
+        },
+        "Layer4": {
+            "title": "SubBasin Tree Canopy",
+            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/3",
+            "type": "feature",
+            "opacity": 1.0,
+            "layername": "SubBasin Tree Canopy",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Name: {basinname}",
+                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}",
+                "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
+                "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
+                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+            ],
+            "order" : 3
+        },
+        "Layer5": {
+            "title": "Tree Health Index",
+            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
+            "type": "raster",
+            "opacity": 0.5,
+            "layername": "Tree Health Index",
+            "legend": true,
+            "popup" : false,
+            "popupContent": [""],
+            "order" : 4
+        },
+        "Layer6": {
+            "title": "Land Cover",
+            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
+            "type": "raster",
+            "opacity": 0.6,
+            "layername": "Land Cover",
+            "legend": true,
+            "popup" : false,
+            "popupContent": [""],
+            "order" : 5
+        },
+        "Layer7": {
+            "title": "Fragmentation",
+            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
+            "type": "raster",
+            "opacity": 0.6,
+            "layername": "Fragmentation",
+            "legend": true,
+            "popup" : false,
+            "popupContent": [""],
+            "order" : 51
+        },
+        "Layer8": {
+            "title": "Priority Planting",
+            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SAM_PriorityPlanting/MapServer",
+            "type": "tiled",
+            "opacity": 0.6,
+            "layername": "Priority Planting",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Planting Priority: {priority}",
+                "Area (SQFT): {sqft:NumberFormat(places:2)}"
+            ],
+            "order" : 6
+        }
+    },
+    "slides":{
+        "slide1": {
+            "Title": "Introduction",
+            "Subtitle": "",
+            "paragraphTitle": "",
+            "MapAttributes": {
+                "viewType" : "detailed",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 12,
+                "featureArray": [
+                    "<img src='img/umbrella-lady.gif' >"
+                    ],
+                "searchLayer": "",
+                "searchFld": "",
+                "searchAttr": ""
+                },
+            "navPanelContent": [
+                "Sammamish’s tree canopy has quite a story to tell you!",
+                "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='/img/bear.mp4' allowfullscreen></iframe> </div>",
+                "Simply scroll through the following pages to learn all about the strengths and benefits of our urban forest, as well as the opportunities and challenges that it currently faces.",
+                "Publicly and privately-owned forests combine to create an urban tree canopy that provides numerous benefits to city residents, businesses, students, and the Puget Sound region as a whole. These benefits come from significant contributions to stormwater management, public health improvement, energy use reduction, air pollution abatement, and overall quality of life. These ecosystem, economic, and social services provided by trees become even more important to Sammamish as the City grows and changes with time.",
+                "Recognizing the value of the urban forest, the City of Sammamish has assessed the extent of the current total tree canopy and conducted a limited tree inventory.  Based on this information, an Urban Forest Management Plan is being prepared as the next step in the city’s effort to proactively plan for and manage this valuable asset.",
+                "The following pages and interactive maps will show you information about current urban forest conditions in Sammamish, the urban tree canopy data analyses and findings, and describe action steps the City and citizens can take that will accomplish citywide urban forest management goals."
+            ]
+        },
+        "slide2": {
+            "Title": "What Do We Have: Forest Resources",
+            "Subtitle": "",
+            "paragraphTitle": "Urban Tree Canopy",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer6"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "Canopy cover is a measure of the physical coverage of the tree canopy over the land. It represents a way of expressing, as a percentage, how much of any given area is shaded or protected by trees. Canopy cover is an important way of measuring the character, location, extent, and benefits of an urban forest.",
+            "The urban tree canopy (UTC) analysis found that 48% of Sammamish is covered by tree canopy, while 25% of the city is covered by impervious surfaces (roads, buildings) that repel stormwater and contribute to heat island effects. The remaining land in the city is pervious areas of low vegetation such as understory (11%), bare soil (2%) such as athletic fields, and open water (2%).",
+            "<img src='img/examplechart1.png' >",
+            "The analysis reveals that:<ul><li>The theoretical maximum canopy for the city is 60% UTC.<li>Sammamish directly manages 2,193 acres of public property with 32% UTC</li><ul><li>Tree canopy in parks represents 6% of the city’s total tree cover.</ul><li>For context, the UTC in Neighboring Cities include:</li><ul><li>Issaquah (2006) - 51%<li>Snoqualmie (2011) - 44%<li>Kirkland (2010) - 41%<li>Seattle (2016) - 28%</ul></ul>According to U.S. Forest Service Research Forester, Greg McPherson (AmericanForests.org), canopy goals are best developed on a city-by-city basis and should consider constraints to creating canopy such as:<ul><li>Development densities (i.e., dense development patterns with more impervious surfaces have less opportunity for cover)<li>Land use patterns (i.e., residential areas may have more opportunity for canopy than commercial areas, but canopy cover tends to be lower in residential areas of disadvantaged communities versus wealthy ones)<li>Ordinances (i.e., parking lot shade ordinances promote cover over some impervious areas); and climate (i.e., canopy cover in desert cities is often less than tropical cities)</ul>"
+            ]
+        },
+        "slide3": {
+            "Title": "",
+            "Subtitle": "",
+            "paragraphTitle": "Forest Fragmentation",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer7"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "The overall health of Sammamish’s urban ecosystem depends greatly on the ability of trees, plants, wildlife, insects, and humans to interact as a whole.  Ecosystem health declines when there is urban build-up and land clearing that results in tree removals and a decrease in overall tree canopy cover. Land development often causes tree canopies to be fragmented and leads to a decline in habitat quality and canopy connectivity. In turn, this decline results in decreased wildlife populations and increased risk and susceptibility to non-native, invasive plants and insects, and disease to both woodlands and landscapes in the city.",
+            "Sammamish has approximately 6,357 acres of tree canopy in four classifications, establishing the following baseline measures for the city:",
+            "<ul><li>Core Canopy and Perforated Canopy - This is high quality, high-functioning forestland and represents 26% of Sammamish’s forests. Because of small clearings within them, perforated areas of the canopy are just beginning to lose connectivity with large forest tracts.</li><li>Edge Canopy - This type of forest is defined as the boundary between core forests and large tracts of developed and non-forested land. This category accounts for 34% of Sammamish’s canopy.</li><li>Patch Canopy -This classification is for tree canopy that comprises a small forested area that is surrounded by non-forested land cover. This category of forests is the least productive and beneficial and comprises 40% of Sammamish’s urban tree canopy.</li></ul>",
+            "Knowing the locations of the forest types can guide land acquisition decisions and tree planting priorities so that these kinds of efforts are targeted in areas that can connect isolated areas of trees to create more contiguous and larger urban forests tracts."
+            ]
+        },
+        "slide4": {
+            "Title": "Forest Health Issues",
+            "Subtitle": "",
+            "paragraphTitle": "Tree Canopy Health",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer5"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "The overall health of trees has a direct impact on the sustainability of Sammamish’s urban forest. Trees in worse condition require more maintenance, are more susceptible to insect and disease problems, and can present a health and safety risk to the public. Trees in better condition require less maintenance, are less prone to storm damage, look better, and provide maximum environmental services to the city.",
+            "Using the citywide UTC data, a relative health assessment  established a benchmark that over 75% of the urban tree canopy could be in Good and Very Good health. Almost 14% was classified as in Fair health, and approximately 9% of the canopy is in relatively Poor health or Dead.  Trees growing in an urban environment face many challenges that threaten their vigor, increase risk, and shorten their service lives: poor soil quality, restricted rooting area, air pollution, increased temperatures, construction damage, vehicular accidents, soil compaction, drought stress, and stress-induced insect and disease infestations.  Of particular concern for Sammamish are remnant issues from its logging history, including specific concerns over Laminated Root Rot and other diseases affecting native trees.",
+            "If unmanaged, these risks to forest health may result in the trees that are in Fair condition falling into the Poor/Dead classification.  For the entire urban forest, this puts an estimated one quarter of Sammamish’s canopy at an elevated risk.  The city and property owners should stay aware of these threats and understand the best actions they can take to protect the tree canopy on public and private property."
+            ]
+        },
+        "slide5": {
+            "Title": "Public Trees",
+            "Subtitle": "",
+            "paragraphTitle": "Street Trees",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer2"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "While comprehensive urban forest management considers all trees across the entire jurisdiction and takes action to improve the condition and extent of the citywide urban tree canopy, the City of Sammamish’s primary responsibility is to properly manage public trees. Therefore, an important step in developing proactive management strategies is to assess the current composition and distribution of Sammamish’s public trees and their associated ecosystem services. A remote sensing project in 2017 found approximately 15,988 tree sites along public rights-of-way:",
+            "<ul><li>2,245 trees were identified as coniferous</li><li>7,643 trees were identified as deciduous</li><li>6,100 trees were not identified (clusters of trees)</li></ul>",
+            "In the coming years, the city will need to learn more about this population to manage liabilities and ensure proper care of the City’s public asset."
+            ]
+        },
+        "slide6": {
+            "Title": "",
+            "Subtitle": "",
+            "paragraphTitle": "Parks",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer3"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "The City recognizes its specific role in stewarding and protecting trees and forests within its parks and preserves. There are 680 acres of land within these categories with 53% covered by tree canopy*.  By planting additional trees, the city could potentially increase the canopy with these areas to 62%**.  The following areas were included in this analysis:",
+            "<ul id='park-list'><li id='beaverLakePark' value='Beaver Lake Park'>Beaver Lake Park</li><li id='sammamish-commons' value='Sammamish Commons'>  Sammamish Commons</li><li value='Big Rock Park'>Big Rock Park</li><li value='Ebright Creek Park'>Ebright Creek Park</li><li value='Pine Lake Park'>Pine Lake Park</li><li value='Sammamish Landing Park'>Sammamish Landing Park</li><li value='NE Sammamish Park'>NE Sammamish Park</li><li value='East Sammamish Park'>East Sammamish Park</li><li value='Klahanie Park'>Klahanie Park</li><li value='Illahee Trail Park'>Illahee Trail Park</li><li value='Sahalee Golf & Country Club'>Sahalee Golf & Country Club (Privately Owned)</li><li value='Plateau Golf & Country Club'>Plateau Golf & Country Club (Privately Owned)</li><li value='Beaver Lake Preserve'>Beaver Lake Preserve</li><li value='Steven & Rosina Kipper Preserve'>Steven & Rosina Kipper Preserve</li></ul>",
+            "*Evans Creek Preserve is city property, but excluded from the analysis as it was outside city limits.",
+            "** Athletic fields and parking areas were excluded as eligible planting sites."
+            ]
+        },
+        "slide7": {
+            "Title": "What Do We Have? Tree Benefits",
+            "Subtitle": "",
+            "paragraphTitle": "",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer4"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "Sammamish’s existing citywide tree canopy provides residents with $4 million in benefits annually. In addition to the annual benefits, the carbon stored by the current UTC contributes an additional $28 million in benefits, bringing the collective benefit amount to $32 million. This information was calculated using models and methods derived from <a href='http://www.itreetools.org'>www.itreetools.org.</a>",
+            "Sammamish’s trees are amazing because they:<br/><ul><li>Remove almost 360,000 pounds of pollutants from the air every year, and these air quality improvements have the impressive value of $626,000 annually.</li><li>Intercept a staggering 88 million gallons of stormwater annually; this important infrastructure service is valued at approximately $2.4 million each year.</li><li>Sequester 26,859 tons of Carbon each year valued at $946,916 annually.</li></ul>",
+            "This City of Sammamish has mapped the watershed sub-basins as a key approach to managing the local environment. Knowledge about the UTC within these areas provides a benchmark for understanding and optimizing stormwater mitigation benefits and other environmental services."
+            ]
+        },
+        "slide8": {
+            "Title": "What Do We Want?",
+            "Subtitle": "Managing for the Future Forest",
+            "paragraphTitle": "",
+            "MapAttributes": {
+                "viewType": "map",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": ["Layer1", "Layer8"],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "In general, a sustainable urban forest is a forest in which the trees are of different ages and diverse with species well-suited to site conditions, and that are insect and disease resistant and low maintenance. A tree population meeting these criteria is sustainable, resilient, and produces maximum social, economic, and ecological benefits for the community.",
+            "<div class='quote'>'We cannot separate sustainable urban forests from the people who live in and around them. Sustainable urban forests are not born, they are made. They do not arise at random, but result from a community-wide commitment to their creation and management.  Obtaining the commitment of a broad community, of numerous constituencies, cannot be dictated or legislated. It must arise out of compromise and respect.'<br> -- Clark, et. al., A Model of Urban Forest Sustainability</div>",
+            "In recent months, the City has conducted a public opinion survey and worked with consultants to explore all the ways that the City and residents connect with urban forestry issues.  By the autumn of 2018, this page will be updated with summary positions that will help the city realize its vision for the future forest in Sammamish."
+            ]
+        },
+        "slide9": {
+            "Title": "Sammamish’s UFMP",
+            "Subtitle": "Next Steps",
+            "paragraphTitle": "",
+            "MapAttributes": {
+                "viewType": "detailed",
+                "MapCenter": [-122.035534, 47.616567],
+                "Zoom" : 13,
+                "featureArray": [
+                    "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='/img/bear.mp4' allowfullscreen></iframe> </div>"
+                ],
+                "searchLayer": "Layer1",
+                "searchFld": "",
+                "searchAttr": ""
+            },
+            "navPanelContent": [
+            "Sammamish’s Urban Forest Management Plan should be considered a “living” document that needs everyone’s input and action. Following principles of adaptive management, the plan will provide opportunities for engagement and adjustment through cyclical updates.",
+            "When the UFMP is fully developed, return to this page to learn about the summary actions and goals the City will be pursuing in order to realize the community vision. If you have questions or suggestions for better managing and growing our city’s urban forest, please contact:",
+            "David Goodman, Senior Management Analyst",
+            "(425) 295-0534, dgoodman@sammamish.us",
+            "<a href='https://www.sammamish.us/government/departments/community-development/current-projects/urban-forest-management-plan/'>Urban Forest Managment Plan</a>",
+            "<div class='lowlight'>Funds for this project were provided by the USDA Forest Service Urban and Community Forestry Program, administered through the State of Washington Department of Natural Resources Urban and Community Forestry Program. The USDA is an equal opportunity provider and employer.</div>",
+            "<img class='partner_logos' src='Img/sammamish_partners.png' alt='Partners'>"
+            ]
+        }
+    }
+  }
