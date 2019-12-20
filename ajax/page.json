@@ -9,7 +9,7 @@
     "Layers": {
         "Layer1": {
             "title": "Sammamish Boundary",
-            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/0",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/0",
             "type": "feature",
             "opacity": 1.0,
             "layername": "Sammamish Boundary",
@@ -19,11 +19,11 @@
             "order" : 0
         },
         "Layer2": {
-            "title": "ROWtrees",
-            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/1",
+            "title": "Land Use",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/6",
             "type": "feature",
-            "opacity": 1.0,
-            "layername": "ROWtrees",
+            "opacity": 0.5,
+            "layername": "Land Use",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -33,11 +33,11 @@
             "order" : 1
         },
         "Layer3": {
-            "title": "Park Tree Canopy",
-            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/2",
+            "title": "Priority Planting",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/10",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "Park Tree Canopy",
+            "layername": "Priority Planting",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -124,7 +124,7 @@
             "paragraphTitle": "",
             "MapAttributes": {
                 "viewType" : "detailed",
-                "MapCenter": [-122.035534, 47.616567],
+                "MapCenter": [-121.433019, 37.729078],
                 "Zoom" : 12,
                 "featureArray": [
                     "<img src='img/traceyCA/slide1.jpg' >"
@@ -147,9 +147,9 @@
             "paragraphTitle": "Urban Tree Canopy",
             "MapAttributes": {
                 "viewType": "map",
-                "MapCenter": [-122.035534, 47.616567],
+                "MapCenter": [-121.433019, 37.729078],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer6"],
+                "featureArray": ["Layer1", "Layer2"],
                 "searchLayer": "Layer1",
                 "searchFld": "",
                 "searchAttr": ""
@@ -172,18 +172,18 @@
             "Subtitle": "",
             "paragraphTitle": "Historic Change",
             "MapAttributes": {
-                "viewType": "map",
+                "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer7"],
-                "searchLayer": "Layer1",
+                "featureArray": ["<img src='img/traceyCA/slide3graphic2.png' >"],
+                "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""
             },
             "navPanelContent": [
             "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<img src='img/traceyCA/slide3graphic1.png' >",
-            "<img src='img/traceyCA/slide3graphic2sm.png' >"
+            "<img src='img/traceyCA/slide3graphic1.png' >"
+            
             ]
         },
         "slide4": {
@@ -210,11 +210,11 @@
             "Subtitle": "",
             "paragraphTitle": "Tracy’s community trees provide $5.7 million in net benefits each year.<a href='https://www.itreetools.org/'> (www.itreetools.org)</a>",
             "MapAttributes": {
-                "viewType": "map",
+                "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer2"],
-                "searchLayer": "Layer1",
+                "featureArray": [ "<img src='img/traceyCA/slide5graphic2.jpg' >" ],
+                "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""
             },
@@ -222,8 +222,8 @@
             "<ul>Benefits include:<li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365.2 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
             "<img src='img/traceyCA/slide5graphic1.png' >",    
 
-            "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <em>For every $1 invested in community trees, $4.06 are received in benefits.</em> ",
-            "<img src='img/traceyCA/slide5graphic2.jpg' >"     
+            "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <em>For every $1 invested in community trees, $4.06 are received in benefits.</em> "
+               
 
             ]
         },
@@ -253,11 +253,11 @@
             "Subtitle": "",
             "paragraphTitle": "Urban Forest Management Plan",
             "MapAttributes": {
-                "viewType": "map",
+                "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer4"],
-                "searchLayer": "Layer1",
+                "featureArray": ["<img src='img/traceyCA/slide7img1.jpg' >"],
+                "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""
             },
@@ -266,8 +266,8 @@
 
             "Chart table or some sort of graphic here",
 
-            "<i>Funds for this project were provided by CalFire</i>",
-            "<img src='img/traceyCA/slide7img1.jpg' >"
+            "<i>Funds for this project were provided by CalFire</i>"
+            
             ]
         },
         "slide8": {
