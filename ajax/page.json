@@ -51,7 +51,7 @@
         },
         "Layer4": {
             "title": "SubBasin Tree Canopy",
-            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/3",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/3",
             "type": "feature",
             "opacity": 1.0,
             "layername": "SubBasin Tree Canopy",
@@ -150,7 +150,7 @@
                 "MapCenter": [-121.433019, 37.729078],
                 "Zoom" : 13,
                 "featureArray": ["Layer1", "Layer2"],
-                "searchLayer": "Layer1",
+                "searchLayer": "Layer2",
                 "searchFld": "",
                 "searchAttr": ""
             },

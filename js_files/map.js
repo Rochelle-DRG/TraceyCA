@@ -467,9 +467,9 @@ var createMap = function (basemap, zoom, center, containerID) {
 
                             // see if the point is inside each park
                             for (i = 0; i < theLengthImLookingFor; i++) {
-                                console.log("The index we are on is: "+i);
-                                console.log("The park we are checking is: "+result.features[i].attributes.name);
-                                console.log("The point we are checking is: lat" + mousePoint.latitude + ", long "+ mousePoint.longitude);
+                                // console.log("The index we are on is: "+i);
+                                // console.log("The park we are checking is: "+result.features[i].attributes.name);
+                                // console.log("The point we are checking is: lat" + mousePoint.latitude + ", long "+ mousePoint.longitude);
                                 // console.log(result.features[i].geometry.rings); //returns an array with 231 rings
                                 // console.log(itemRings); //undefined
                                 var itemRings = result.features[i].geometry.rings;
@@ -477,13 +477,13 @@ var createMap = function (basemap, zoom, center, containerID) {
                                     rings: itemRings
                                     // rings: result.features[i].geometry.rings
                                 });
-                                console.log(itemPolygon.rings);// is undefined, but it should be rings
-                                console.log(beaverLakePolygon.rings);
+                                // console.log(itemPolygon.rings);// is undefined, but it should be rings
+                                // console.log(beaverLakePolygon.rings);
 
                                 var isItIn = itemPolygon.contains(mousePoint);
                                 // console.log(isItIn); //returns true or false
                                 if (isItIn = true){
-                                    console.log("True: This point is in our polygon?"+ isItIn);
+                                    // console.log("True: This point is in our polygon?"+ isItIn);
 
                                     var highlightedPolygonGraphic = new Graphic({
                                         geometry: itemPolygon,
@@ -494,7 +494,9 @@ var createMap = function (basemap, zoom, center, containerID) {
                                     view.graphics.add(highlightedPolygonGraphic);
 
                                     break
-                                } else {console.log("False: This point is not in our polygon" + isItIn)};
+                                } else {
+                                    // console.log("False: This point is not in our polygon" + isItIn)
+                                };
             
 
 

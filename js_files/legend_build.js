@@ -1,7 +1,7 @@
 
 // Ideally i dpnt want this hardcoded here, and want to add in a thing to the main thing to send this to this thing, 
 // thing.
-var legendURL = "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer/legend?f=pjson";
+var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/legend?f=pjson";
 
     console.log("legend builder called");
 
@@ -12,6 +12,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishF
             $.each(data.layers, function(key, value) {
                 
                 var shortName = value.layerName.replace(/\s/g,'');
+                console.log(shortName);
                 legends.push(
                     "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+ value.layerName +"</span><ul>"
                 );
