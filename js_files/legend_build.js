@@ -7,17 +7,19 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapS
 
     var buildLegend = function() {
         $.getJSON( legendURL, function( data ) {
+            console.log(data);
             var legends = [];
             legends.push("<div class='legend-wrapper'>");
             $.each(data.layers, function(key, value) {
-                
+                // console.log(value);
                 var shortName = value.layerName.replace(/\s/g,'');
-                console.log(shortName);
+                // console.log(value.layerName);
                 legends.push(
                     "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+ value.layerName +"</span><ul>"
                 );
                 
                 $.each(value.legend, function(key2, value2){
+                    console.log(value2);
                     //list item begin
                     legends.push("<li>");
 
