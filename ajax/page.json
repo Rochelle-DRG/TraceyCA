@@ -19,7 +19,7 @@
             "order" : 0
         },
         "Layer2": {
-            "title": "Land Use",
+            "title": "TRACEYCA_Land Use",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/6",
             "type": "feature",
             "opacity": 0.5,
@@ -33,7 +33,7 @@
             "order" : 1
         },
         "Layer3": {
-            "title": "Priority Planting",
+            "title": "TRACEYCA_PriorityPlantingLevel",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/10",
             "type": "feature",
             "opacity": 1.0,
@@ -50,11 +50,11 @@
             "order" : 2
         },
         "Layer4": {
-            "title": "SubBasin Tree Canopy",
+            "title": "TRACEYCA_Parks",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/3",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "SubBasin Tree Canopy",
+            "layername": "TRACEYCA_Parks",
             "legend": true,
             "popup" : true,
             "popupContent": [
