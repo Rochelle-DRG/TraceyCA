@@ -8,11 +8,11 @@
     },
     "Layers": {
         "Layer1": {
-            "title": "Sammamish Boundary",
+            "title": "Tracey Boundary",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/0",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "Sammamish Boundary",
+            "layername": "Tracey Boundary",
             "legend": false,
             "popup" : false,
             "popupContent": [""],
@@ -28,7 +28,23 @@
             "popup" : true,
             "popupContent": [
                 "",
-                "Tree Type: {Type}"
+                "Zoning Type: {ZONING_TYP}",
+                "Acres: {acres:NumberFormat(places:2)}",
+                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}",
+                "Impervious Acres: {impervious_acres:NumberFormat(places:2)}",
+                "Impervious %: {impervious_percen:NumberFormat(places:2)}",
+                "Pervious Acres: {pervious_acres:NumberFormat(places:2)}",
+                "Pervious %: {pervious_percent:NumberFormat(places:2)}",
+                "Bare Soil Acres: {bare_soil_acres:NumberFormat(places:2)}",
+                "Bare Soil %: {bare_soil_percent:NumberFormat(places:2)}",
+                "Water Acres: {water_acres:NumberFormat(places:2)}",
+                "Water %: {water_percent:NumberFormat(places:2)}",
+                "Preferable Acres: {preferrable_acres:NumberFormat(places:2)}",
+                "Preferable %: {preferrable_percent:NumberFormat(places:2)}",
+                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}",
+                "No-Planting-Sites Acres: {no_planting_sites_acres:NumberFormat(places:2)}",
+                "No-Planing-Sites %: {no_planting_sites_percent:NumberFormat(places:2)}"
             ],
             "order" : 1
         },
@@ -42,10 +58,8 @@
             "popup" : true,
             "popupContent": [
                 "",
-                "Name: {NAME}",
-                "Type: {TYPE}",
-                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
-                "Canopy %: {canopy_percent:NumberFormat(places:2)}"
+                "Square Feet: {sqft:NumberFormat(places:2)}",
+                "Priority: {priority:NumberFormat(places:2)}"
             ],
             "order" : 2
         },
@@ -59,7 +73,7 @@
             "popup" : true,
             "popupContent": [
                 "",
-                "Name: {basinname}",
+                "Park Name: {park_name}",
                 "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}",
                 "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
@@ -69,46 +83,76 @@
             "order" : 3
         },
         "Layer5": {
-            "title": "Tree Health Index",
-            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
-            "type": "raster",
+            "title": "TRACEYCA_Subdivision",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/2",
+            "type": "feature",
             "opacity": 0.5,
-            "layername": "Tree Health Index",
+            "layername": "TRACEYCA_Subdivision",
             "legend": true,
             "popup" : false,
-            "popupContent": [""],
+            "popupContent": [
+                "",
+                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}",
+                "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
+                "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
+                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+            ],
             "order" : 4
         },
         "Layer6": {
-            "title": "Land Cover",
-            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
-            "type": "raster",
+            "title": "TRACEYCA_LandscapeMaintenanceDistricts",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/5",
+            "type": "feature",
             "opacity": 0.6,
-            "layername": "Land Cover",
+            "layername": "TRACEYCA_LandscapeMaintenanceDistricts",
             "legend": true,
             "popup" : false,
-            "popupContent": [""],
+            "popupContent": [
+                "",
+                "Zone Number: {zone_num}",
+                "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}",
+                "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
+                "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
+                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+            ],
             "order" : 5
         },
         "Layer7": {
-            "title": "Fragmentation",
-            "url": "https://gis.davey.com/arcgis/services/Sammamish/SammamishFeatures/MapServer/WMSServer",
-            "type": "raster",
+            "title": "storymaps.daveyarcgis.TreeHealthIndex",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "type": "feature",
             "opacity": 0.6,
-            "layername": "Fragmentation",
+            "layername": "storymaps.daveyarcgis.TreeHealthIndex",
             "legend": true,
             "popup" : false,
             "popupContent": [""],
             "order" : 51
         },
         "Layer8": {
-            "title": "Priority Planting",
-            "url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SAM_PriorityPlanting/MapServer",
-            "type": "tiled",
+            "title": "storymaps.daveyarcgis.LandCover",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "type": "feature",
             "opacity": 0.6,
-            "layername": "Priority Planting",
+            "layername": "storymaps.daveyarcgis.LandCover",
             "legend": true,
-            "popup" : true,
+            "popup" : false,
+            "popupContent": [
+                "",
+                "Planting Priority: {priority}",
+                "Area (SQFT): {sqft:NumberFormat(places:2)}"
+            ],
+            "order" : 6
+        },
+        "Layer9": {
+            "title": "storymaps.daveyarcgis.ForestFragmentation",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "type": "feature",
+            "opacity": 0.6,
+            "layername": "storymaps.daveyarcgis.ForestFragmentation",
+            "legend": true,
+            "popup" : false,
             "popupContent": [
                 "",
                 "Planting Priority: {priority}",
@@ -116,6 +160,7 @@
             ],
             "order" : 6
         }
+
     },
     "slides":{
         "slide1": {
@@ -157,12 +202,12 @@
             "navPanelContent": [
             "Tree canopy is the layer of leaves, branches, and stems that cover the ground when viewed from above. Land cover, including tree canopy, is expressed as a percentage (of cover) within the city limits.",
             "Currently, 7.4% of Tracy is covered by tree canopy. Explore the interactive map to better understand the distribution of trees and canopy across the community.",
-            "<img src='img/traceyCA/slide2graphic1.jpg' >",
+            "<img src='img/traceyCA/slide2graphic1.png' >",
             "When commercial and industrial parcels are excluded, Tracy’s park and residential areas have an average canopy cover of 12.9%.",
             "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO2 ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
-            "<img src='img/traceyCA/slide2graphic2.jpg' >",
+            "<img src='img/traceyCA/slide2graphic2.png' >",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
-            "<img src='img/traceyCA/slide2graphic3.jpg' >",
+            "<img src='img/traceyCA/slide1graphic3.png' >",
             "Maps: (Tree Canopy Metrics)",
             "<ul><li>land cover</li><li>subdivisions</li><li>parks</li><li>parcels</li><li>land-use</li><li>landscape maintenance districts </li></ul>"
             ]
@@ -194,7 +239,7 @@
                 "viewType": "map",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer5"],
+                "featureArray": ["Layer1", "Layer4"],
                 "searchLayer": "Layer1",
                 "searchFld": "",
                 "searchAttr": ""
