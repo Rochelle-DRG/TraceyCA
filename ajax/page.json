@@ -172,7 +172,7 @@
                 "MapCenter": [-121.433019, 37.729078],
                 "Zoom" : 12,
                 "featureArray": [
-                    "<img src='img/traceyCA/slide1.jpg' >"
+                    "<div style='background-image:url(&quot;img/traceyCA/slide1.jpg&quot;') class='image'></div>"
                     ],
                 "searchLayer": "",
                 "searchFld": "",
@@ -220,7 +220,9 @@
                 "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["<img src='img/traceyCA/slide3graphic2.png' >"],
+                "featureArray": [
+                    "<div style='background-image:url(&quot;img/traceyCA/slide3graphic2.png&quot;') class='image'></div>"
+                ],
                 "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""
@@ -258,7 +260,9 @@
                 "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": [ "<img src='img/traceyCA/slide5graphic2.jpg' >" ],
+                "featureArray": [ 
+                    "<div style='background-image:url(&quot;img/traceyCA/slide5graphic2.jpg&quot;') class='image'></div>"
+                ],
                 "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""
@@ -301,7 +305,9 @@
                 "viewType": "detailed",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["<img src='img/traceyCA/slide7img1.jpg' >"],
+                "featureArray": [
+                    "<div style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot;') class='image'></div>"                
+                ],
                 "searchLayer": "",
                 "searchFld": "",
                 "searchAttr": ""

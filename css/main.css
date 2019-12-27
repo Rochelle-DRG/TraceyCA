@@ -395,6 +395,10 @@ ul, ol {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .img-main {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
   .esri-layer-list {
     display: block;
   }
