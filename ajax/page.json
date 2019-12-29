@@ -229,7 +229,7 @@
             },
             "navPanelContent": [
             "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<img src='img/traceyCA/slide3graphic1.png' >"
+            "<img src='img/traceyCA/slide3graphic1.png' class='fit-graphic'>"
             
             ]
         },
@@ -322,8 +322,8 @@
             ]
         },
         "slide8": {
-            "Title": "What Do We Want?",
-            "Subtitle": "Managing for the Future Forest",
+            "Title": "******What Do We Want?",
+            "Subtitle": "******Managing for the Future Forest",
             "paragraphTitle": "",
             "MapAttributes": {
                 "viewType": "map",
@@ -335,14 +335,14 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "In general, a sustainable urban forest is a forest in which the trees are of different ages and diverse with species well-suited to site conditions, and that are insect and disease resistant and low maintenance. A tree population meeting these criteria is sustainable, resilient, and produces maximum social, economic, and ecological benefits for the community.",
-            "<div class='quote'>'We cannot separate sustainable urban forests from the people who live in and around them. Sustainable urban forests are not born, they are made. They do not arise at random, but result from a community-wide commitment to their creation and management.  Obtaining the commitment of a broad community, of numerous constituencies, cannot be dictated or legislated. It must arise out of compromise and respect.'<br> -- Clark, et. al., A Model of Urban Forest Sustainability</div>",
-            "In recent months, the City has conducted a public opinion survey and worked with consultants to explore all the ways that the City and residents connect with urban forestry issues.  By the autumn of 2018, this page will be updated with summary positions that will help the city realize its vision for the future forest in Sammamish."
+            "******In general, a sustainable urban forest is a forest in which the trees are of different ages and diverse with species well-suited to site conditions, and that are insect and disease resistant and low maintenance. A tree population meeting these criteria is sustainable, resilient, and produces maximum social, economic, and ecological benefits for the community.",
+            "******<div class='quote'>'We cannot separate sustainable urban forests from the people who live in and around them. Sustainable urban forests are not born, they are made. They do not arise at random, but result from a community-wide commitment to their creation and management.  Obtaining the commitment of a broad community, of numerous constituencies, cannot be dictated or legislated. It must arise out of compromise and respect.'<br> -- Clark, et. al., A Model of Urban Forest Sustainability</div>",
+            "******In recent months, the City has conducted a public opinion survey and worked with consultants to explore all the ways that the City and residents connect with urban forestry issues.  By the autumn of 2018, this page will be updated with summary positions that will help the city realize its vision for the future forest in Sammamish."
             ]
         },
         "slide9": {
-            "Title": "Sammamish’s UFMP",
-            "Subtitle": "Next Steps",
+            "Title": "******Sammamish’s UFMP",
+            "Subtitle": "******Next Steps",
             "paragraphTitle": "",
             "MapAttributes": {
                 "viewType": "detailed",
@@ -356,13 +356,13 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Sammamish’s Urban Forest Management Plan should be considered a “living” document that needs everyone’s input and action. Following principles of adaptive management, the plan will provide opportunities for engagement and adjustment through cyclical updates.",
-            "When the UFMP is fully developed, return to this page to learn about the summary actions and goals the City will be pursuing in order to realize the community vision. If you have questions or suggestions for better managing and growing our city’s urban forest, please contact:",
-            "David Goodman, Senior Management Analyst",
-            "(425) 295-0534, dgoodman@sammamish.us",
-            "<a href='https://www.sammamish.us/government/departments/community-development/current-projects/urban-forest-management-plan/'>Urban Forest Managment Plan</a>",
-            "<div class='lowlight'>Funds for this project were provided by the USDA Forest Service Urban and Community Forestry Program, administered through the State of Washington Department of Natural Resources Urban and Community Forestry Program. The USDA is an equal opportunity provider and employer.</div>",
-            "<img class='partner_logos' src='Img/sammamish_partners.png' alt='Partners'>"
+            "*******’s Urban Forest Management Plan should be considered a “living” document that needs everyone’s input and action. Following principles of adaptive management, the plan will provide opportunities for engagement and adjustment through cyclical updates.",
+            "*******When the UFMP is fully developed, return to this page to learn about the summary actions and goals the City will be pursuing in order to realize the community vision. If you have questions or suggestions for better managing and growing our city’s urban forest, please contact:",
+            "*******David Goodman, Senior Management Analyst",
+            "(000) 000-0000, email@email.us",
+            "*******<a href=''>Urban Forest Managment Plan</a>",
+            "*******<div class='lowlight'>Funds for this project were provided by CalFire.</div>",
+            "<img class='partner_logos' src='Img/traceyca/traceyca_partners.png' alt='Partners'>"
             ]
         }
     }
