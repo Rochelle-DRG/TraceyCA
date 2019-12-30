@@ -7,7 +7,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapS
 
     var buildLegend = function() {
         $.getJSON( legendURL, function( data ) {
-            console.log(data);
+            // console.log(data);
             var legends = [];
             legends.push("<div class='legend-wrapper'>");
             $.each(data.layers, function(key, value) {
@@ -19,7 +19,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapS
                 );
                 
                 $.each(value.legend, function(key2, value2){
-                    console.log(value2);
+                    // console.log(value2);
                     //list item begin
                     legends.push("<li>");
 

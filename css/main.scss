@@ -35,7 +35,27 @@ ul, ol {
 p img {
     width: 100%;
 }
-
+.viewLarge {
+    // width: 200%;
+    height: 1100px;
+    border-style: solid;
+    border-width: 150px;
+    border-radius: 30px;
+}
+#graphic-large-view {
+    background-color: black;
+    // height: 800px;
+    // width: 800px ;
+    z-index: 9999;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 50px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.623);
+    pointer-events: none;
+}
+.hidden {
+    visibility: hidden;
+}
 
 // ESRI Overrides
 .esri-legend__layer-caption {
