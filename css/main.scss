@@ -37,9 +37,9 @@ p img {
 }
 .viewLarge {
     // width: 200%;
-    height: 1100px;
+    height: 700px;
     border-style: solid;
-    border-width: 150px;
+    border-width: 40px;
     border-radius: 30px;
 }
 #graphic-large-view {
@@ -48,7 +48,7 @@ p img {
     // width: 800px ;
     z-index: 9999;
     position: absolute;
-    margin-left: 600px;
+    margin-left: 500px;
     margin-top: 50px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.623);
     pointer-events: none;
