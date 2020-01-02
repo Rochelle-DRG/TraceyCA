@@ -56,6 +56,30 @@ p img {
 .hidden {
     visibility: hidden;
 }
+.button {
+    background-color: #1d631f; /* Green */
+    border: 1px solid #011b01;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    //display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+   
+    display:block;
+    float: none;
+    width: 70%;
+    margin: auto;
+  }
+.button:hover {
+    background-color: #3e8e41;
+  }  
+
+
+
+
 
 // ESRI Overrides
 .esri-legend__layer-caption {

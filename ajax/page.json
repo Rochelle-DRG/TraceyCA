@@ -208,8 +208,16 @@
             "<img  class='graphic' src='img/traceyCA/slide2graphic2.png' >",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
             "<img  class='graphic' src='img/traceyCA/slide1graphic3.png' >",
-            "Maps: (Tree Canopy Metrics)",
-            "<ul><li>land cover</li><li>subdivisions</li><li>parks</li><li>parcels</li><li>land-use</li><li>landscape maintenance districts </li></ul>"
+            "<div class='pTitle'> Maps: (Tree Canopy Metrics)</div>",
+            
+            "<button class='button'>Land Cover</button>",
+            "<button class='button'>Subdivisions</button>",
+            "<button class='button'>Parks</button>",
+            "<button class='button'>Parcels</button>",
+            "<button class='button'>Land Use</button>",
+            "<button class='button'>Landscape Maintenance Districts</button>"
+            
+
             ]
         },
         "slide3": {
@@ -253,7 +261,7 @@
             ]
         },
         "slide5": {
-            "Title": "Benefits",
+            "Title": "Environmental Benefits",
             "Subtitle": "",
             "paragraphTitle": "Tracy’s community trees provide $5.7 million in net benefits each year.<a href='https://www.itreetools.org/'> (www.itreetools.org)</a>",
             "MapAttributes": {
