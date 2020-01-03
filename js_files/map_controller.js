@@ -69,6 +69,7 @@ var enableMapControls = function () {
 
     };
 
+
     /** zooms to the extent of the given layer */
     zoomToExtent = function (someID) {
         //console.log(someID);
@@ -107,6 +108,27 @@ var enableMapControls = function () {
                     });
             }
         }
-    };
+    };//end zoomToExtent
+
+    buttonLayerShow = function(buttonLayer){
+        layersToTurnOn = [];
+        console.log(map.layers);
+
+        //turn off all of the layers
+        map.layers.forEach(layer => {
+            layer.visible = false
+        });
+
+        //get the border layer and button layer
+        var turnOnLayers = map.layers.filter(function(layer){
+            return (layer.name == "Layer1" || layer.name == buttonLayer)
+        });
+        
+        console.log(turnOnLayers);
+        //turn them on
+        turnOnLayers.forEach(layer => {
+            layer.visible = true;
+        });
+    }
 
 };

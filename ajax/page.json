@@ -19,8 +19,8 @@
             "order" : 0
         },
         "Layer2": {
-            "title": "TRACEYCA_Land Use",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/6",
+            "title": "Land Use",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/1",
             "type": "feature",
             "opacity": 0.5,
             "layername": "Land Use",
@@ -49,11 +49,11 @@
             "order" : 1
         },
         "Layer3": {
-            "title": "TRACEYCA_PriorityPlantingLevel",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/10",
+            "title": "Priority Planting Level",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/2",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "Priority Planting",
+            "layername": "Priority Planting Level",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -64,11 +64,11 @@
             "order" : 2
         },
         "Layer4": {
-            "title": "TRACEYCA_Parks",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/3",
+            "title": "Parks",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/5",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "TRACEYCA_Parks",
+            "layername": "Parks",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -83,11 +83,11 @@
             "order" : 3
         },
         "Layer5": {
-            "title": "TRACEYCA_Subdivision",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/2",
+            "title": "Subdivision",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/4",
             "type": "feature",
             "opacity": 0.5,
-            "layername": "TRACEYCA_Subdivision",
+            "layername": "Subdivision",
             "legend": true,
             "popup" : false,
             "popupContent": [
@@ -101,11 +101,11 @@
             "order" : 4
         },
         "Layer6": {
-            "title": "TRACEYCA_LandscapeMaintenanceDistricts",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/5",
+            "title": "Landscape Maintenance Districts",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "TRACEYCA_LandscapeMaintenanceDistricts",
+            "layername": "Landscape Maintenance Districts",
             "legend": true,
             "popup" : false,
             "popupContent": [
@@ -120,22 +120,22 @@
             "order" : 5
         },
         "Layer7": {
-            "title": "storymaps.daveyarcgis.TreeHealthIndex",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "title": "Tree Health Index",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/9",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "storymaps.daveyarcgis.TreeHealthIndex",
+            "layername": "Tree Health Index",
             "legend": true,
             "popup" : false,
             "popupContent": [""],
             "order" : 51
         },
         "Layer8": {
-            "title": "storymaps.daveyarcgis.LandCover",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "title": "Land Cover",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/3",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "storymaps.daveyarcgis.LandCover",
+            "layername": "Land Cover",
             "legend": true,
             "popup" : false,
             "popupContent": [
@@ -146,11 +146,26 @@
             "order" : 6
         },
         "Layer9": {
-            "title": "storymaps.daveyarcgis.ForestFragmentation",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "title": "Forest Fragmentation",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/10",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "storymaps.daveyarcgis.ForestFragmentation",
+            "layername": "Forest Fragmentation",
+            "legend": true,
+            "popup" : false,
+            "popupContent": [
+                "",
+                "Planting Priority: {priority}",
+                "Area (SQFT): {sqft:NumberFormat(places:2)}"
+            ],
+            "order" : 6
+        },
+        "Layer10": {
+            "title": "Parcels",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/6",
+            "type": "feature",
+            "opacity": 0.6,
+            "layername": "Parcels",
             "legend": true,
             "popup" : false,
             "popupContent": [
@@ -160,6 +175,7 @@
             ],
             "order" : 6
         }
+
 
     },
     "slides":{
@@ -210,12 +226,12 @@
             "<img  class='graphic' src='img/traceyCA/slide1graphic3.png' >",
             "<div class='pTitle'> Maps: (Tree Canopy Metrics)</div>",
             
-            "<button class='button'>Land Cover</button>",
-            "<button class='button'>Subdivisions</button>",
-            "<button class='button'>Parks</button>",
-            "<button class='button'>Parcels</button>",
-            "<button class='button'>Land Use</button>",
-            "<button class='button'>Landscape Maintenance Districts</button>"
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button>",
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button>",
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer4&quot;)'>Parks</button>",
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer10&quot;)'>Parcels</button>",
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer1&quot;)'>Land Use</button>",
+            "<button class='button' onclick='buttonLayerShow(&quot;Layer6&quot;)'>Landscape Maintenance Districts</button>"
             
 
             ]
