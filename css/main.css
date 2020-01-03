@@ -10,7 +10,7 @@ html, body {
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul, ol {
@@ -301,8 +301,9 @@ p img {
     margin: 0px 0px;
   }
   .navPanelHeader span.title {
-    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: normal;
+    font-weight: bold;
     font-size: 1.9em;
     color: #b67844;
   }
