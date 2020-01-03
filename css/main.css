@@ -10,7 +10,7 @@ html, body {
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 ul, ol {
@@ -301,9 +301,8 @@ p img {
     margin: 0px 0px;
   }
   .navPanelHeader span.title {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-weight: 100;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
     font-size: 1.9em;
     color: #b67844;
   }
