@@ -93,10 +93,11 @@ body {
   }
 
   span.title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     // font-weight: normal;
     // font-weight: 100;
-     font-weight: 900;
+    //  font-weight: 900;
+     font-weight: bold;
 
     font-size: 1.9em;
     color: $header_title;
