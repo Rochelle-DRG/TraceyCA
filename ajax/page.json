@@ -89,7 +89,7 @@
             "opacity": 0.5,
             "layername": "Subdivision",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [
                 "",
                 "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
@@ -107,7 +107,7 @@
             "opacity": 0.6,
             "layername": "Landscape Maintenance Districts",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [
                 "",
                 "Zone Number: {zone_num}",
@@ -126,7 +126,7 @@
             "opacity": 0.6,
             "layername": "Tree Health Index",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [""],
             "order" : 51
         },
@@ -137,7 +137,7 @@
             "opacity": 0.6,
             "layername": "Land Cover",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [
                 "",
                 "Planting Priority: {priority}",
@@ -152,7 +152,7 @@
             "opacity": 0.6,
             "layername": "Forest Fragmentation",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [
                 "",
                 "Planting Priority: {priority}",
@@ -167,7 +167,7 @@
             "opacity": 0.6,
             "layername": "Parcels",
             "legend": true,
-            "popup" : false,
+            "popup" : true,
             "popupContent": [
                 "",
                 "Planting Priority: {priority}",
