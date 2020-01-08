@@ -19,7 +19,7 @@
             "order" : 0
         },
         "Layer2": {
-            "title": "Land_Use",
+            "title": "Land Use",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/1",
             "type": "feature",
             "opacity": 0.5,

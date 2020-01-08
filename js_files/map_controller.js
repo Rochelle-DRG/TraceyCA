@@ -112,7 +112,7 @@ var enableMapControls = function () {
 
     buttonLayerShow = function (buttonLayer) {
         layersToTurnOn = [];
-        console.log(map.layers);
+        // console.log(map.layers);
 
         //turn off all of the layers
         map.layers.forEach(layer => {
