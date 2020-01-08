@@ -16,6 +16,7 @@ var createMap = function (basemap, zoom, center, containerID) {
         "esri/layers/ElevationLayer",
         "esri/layers/WMSLayer",
         "esri/layers/TileLayer",
+        "esri/layers/MapImageLayer",
         "esri/layers/support/WMSSublayer",
         "esri/widgets/Legend",
         "esri/widgets/LayerList",
@@ -53,6 +54,7 @@ var createMap = function (basemap, zoom, center, containerID) {
             ElevationLayer,
             WMSLayer,
             TileLayer,
+            MapImageLayer,
             WMSSublayer,
             Legend,
             LayerList,
@@ -98,7 +100,7 @@ var createMap = function (basemap, zoom, center, containerID) {
             });
 
             // in the 4.6 api the view is a separate decalration, we do that here
-            view = new SceneView({
+            view = new MapView({
                 container: containerID || "mapDiv",
                 center: center || [-121.448637, 37.724050],
                 map: map, // references the map above
@@ -166,8 +168,36 @@ var createMap = function (basemap, zoom, center, containerID) {
                         sublayers: [{
                             name: item.layername,
                         }]
-
                     });
+                } else if (item.type === "TileLayer"){
+                    newLayer = new TileLayer({
+                        // name: k,
+                        title: item.title,
+                        // opacity: item.opacity,
+                        visible: false,
+                        url: item.url,
+                        // popupEnabled: false,
+                        legendEnabled: item.legend,
+                        // sublayers: [{
+                        //     name: item.layername,
+                        // }]
+                    });
+                } else if (item.type === "MapImageLayer"){
+                    newLayer = new MapImageLayer ({
+                        // name: k,
+                        title: item.title,
+                        // opacity: item.opacity,
+                        visible: false,
+                        url: item.url,
+                        // popupEnabled: false,
+                        legendEnabled: item.legend,
+                        // sublayers: [{
+                        //     name: item.layername,
+                        // }]
+                        
+                    });
+                   
+
 
                     /** if not a tiled layer and has a popup*/
                 } else if (item.type !== "tiled" && item.popup === true) {              /// Here I am

@@ -9,7 +9,7 @@
     "Layers": {
         "Layer1": {
             "title": "Tracey Boundary",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/0",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/0",
             "type": "feature",
             "opacity": 1.0,
             "layername": "Tracey Boundary",
@@ -20,7 +20,7 @@
         },
         "Layer2": {
             "title": "Land_Use",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/1",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/1",
             "type": "feature",
             "opacity": 0.5,
             "layername": "Land Use",
@@ -49,11 +49,11 @@
             "order" : 1
         },
         "Layer3": {
-            "title": "Priority_Planting_Level",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/2",
+            "title": "Priority Planting Level",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/2",
             "type": "feature",
             "opacity": 1.0,
-            "layername": "Priority_Planting_Level",
+            "layername": "Priority Planting Level",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -65,7 +65,7 @@
         },
         "Layer4": {
             "title": "Parks",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/5",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/5",
             "type": "feature",
             "opacity": 1.0,
             "layername": "Parks",
@@ -84,7 +84,7 @@
         },
         "Layer5": {
             "title": "Subdivision",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/4",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/4",
             "type": "feature",
             "opacity": 0.5,
             "layername": "Subdivision",
@@ -102,7 +102,7 @@
         },
         "Layer6": {
             "title": "Landscape_Maintenance_Districts",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/7",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/7",
             "type": "feature",
             "opacity": 0.6,
             "layername": "Landscape_Maintenance_Districts",
@@ -121,7 +121,7 @@
         },
         "Layer7": {
             "title": "Tree_Health_Index",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/9",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/9",
             "type": "feature",
             "opacity": 0.6,
             "layername": "Tree_Health_Index",
@@ -131,11 +131,11 @@
             "order" : 51
         },
         "Layer8": {
-            "title": "Land_Cover",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/3",
+            "title": "Land Cover",
+            "url": "https://gis.davey.com/arcgis/services/TracyCA/TracyCA_2020/MapServer/WMSServer",
             "type": "raster",
             "opacity": 0.6,
-            "layername": "Land_Cover",
+            "layername": "5",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -147,7 +147,7 @@
         },
         "Layer9": {
             "title": "Forest_Fragmentation",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/10",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/10",
             "type": "feature",
             "opacity": 0.6,
             "layername": "Forest_Fragmentation",
@@ -162,7 +162,7 @@
         },
         "Layer10": {
             "title": "Parcels",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/6",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/6",
             "type": "feature",
             "opacity": 0.6,
             "layername": "Parcels",
@@ -177,7 +177,7 @@
         },
         "Layer11": {
             "title": "Tree_Inventory",
-            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/8",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/8",
             "type": "feature",
             "opacity": 0.6,
             "layername": "Tree_Inventory",
