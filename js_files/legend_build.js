@@ -13,9 +13,10 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapS
             $.each(data.layers, function(key, value) {
                 // console.log(value);
                 var shortName = value.layerName.replace(/\s/g,'');
+                var legendTitle = shortName.split('_').join(' ');
                 // console.log(value.layerName);
                 legends.push(
-                    "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+ value.layerName +"</span><ul>"
+                    "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+ legendTitle +"</span><ul>"
                 );
                 
                 $.each(value.legend, function(key2, value2){

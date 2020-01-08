@@ -19,7 +19,7 @@
             "order" : 0
         },
         "Layer2": {
-            "title": "Land Use",
+            "title": "Land_Use",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/1",
             "type": "feature",
             "opacity": 0.5,
@@ -49,7 +49,7 @@
             "order" : 1
         },
         "Layer3": {
-            "title": "Priority Planting Level",
+            "title": "Priority_Planting_Level",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/2",
             "type": "feature",
             "opacity": 1.0,
@@ -101,7 +101,7 @@
             "order" : 4
         },
         "Layer6": {
-            "title": "Landscape Maintenance Districts",
+            "title": "Landscape_Maintenance_Districts",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/7",
             "type": "feature",
             "opacity": 0.6,
@@ -120,7 +120,7 @@
             "order" : 5
         },
         "Layer7": {
-            "title": "Tree Health Index",
+            "title": "Tree_Health_Index",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/9",
             "type": "feature",
             "opacity": 0.6,
@@ -131,7 +131,7 @@
             "order" : 51
         },
         "Layer8": {
-            "title": "Land Cover",
+            "title": "Land_Cover",
             "url": "https://gis.davey.com/arcgis/services/TracyCA/TracyCA_2020/MapServer/WMSServer",
             "type": "raster",
             "opacity": 0.6,
@@ -140,13 +140,14 @@
             "popup" : true,
             "popupContent": [
                 "",
-                "Planting Priority: {priority}",
-                "Area (SQFT): {sqft:NumberFormat(places:2)}"
+                "Coverclass: {priority}",
+                "Area (SQFT): {sqft:NumberFormat(places:2)}",
+                "Canopy %: {canopy_percent:NumberFormat(places:2)}"
             ],
             "order" : 6
         },
         "Layer9": {
-            "title": "Forest Fragmentation",
+            "title": "Forest_Fragmentation",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/10",
             "type": "feature",
             "opacity": 0.6,
