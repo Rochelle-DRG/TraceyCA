@@ -101,11 +101,11 @@
             "order" : 4
         },
         "Layer6": {
-            "title": "Landscape_Maintenance_Districts",
+            "title": "Landscape Maintenance Districts",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/7",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "Landscape_Maintenance_Districts",
+            "layername": "Landscape Maintenance Districts",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -120,11 +120,11 @@
             "order" : 5
         },
         "Layer7": {
-            "title": "Tree_Health_Index",
+            "title": "Tree Health Index",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/9",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "Tree_Health_Index",
+            "layername": "Tree Health Index",
             "legend": true,
             "popup" : true,
             "popupContent": [""],
@@ -146,11 +146,11 @@
             "order" : 6
         },
         "Layer9": {
-            "title": "Forest_Fragmentation",
+            "title": "Forest Fragmentation",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/10",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "Forest_Fragmentation",
+            "layername": "Forest Fragmentation",
             "legend": true,
             "popup" : true,
             "popupContent": [
@@ -180,7 +180,7 @@
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/8",
             "type": "feature",
             "opacity": 0.6,
-            "layername": "Tree_Inventory",
+            "layername": "Tree Inventory",
             "legend": true,
             "popup" : true,
             "popupContent": [

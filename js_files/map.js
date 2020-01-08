@@ -104,7 +104,7 @@ var createMap = function (basemap, zoom, center, containerID) {
                 container: containerID || "mapDiv",
                 center: center || [-121.448637, 37.724050],
                 map: map, // references the map above
-                // zoom: 12 || zoom,
+                zoom: 12 || zoom,
                 viewingMode: "local",
                 popup: {
                     autoCloseEnabled: true,
