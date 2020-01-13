@@ -50,7 +50,7 @@
             "popupContent": [
                 "",
                 "Square Feet: {sqft:NumberFormat(places:2)}",
-                "Priority: {priority:NumberFormat(places:2)}"
+                "Priority: {priority}"
             ],
             "order" : 2,
             "minzoom": 17
