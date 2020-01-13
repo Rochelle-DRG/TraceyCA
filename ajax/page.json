@@ -191,7 +191,7 @@
                 "Explore the following pages to learn more about the urban forest and our vision for the future.",
                 "Public and privately-owned trees combine to create the urban forest canopy that provides numerous benefits to residents, businesses, students, and visitors. These benefits come from significant contributions to stormwater management, public health,  energy reduction, air pollution, and overall quality of life. These environmental and  socio-economic benefits have the potential to increase over time as trees grow and canopy expands.",
                 "The following pages and interactive maps provide key information about our urban forest. ",
-                "For more information, see Tracy’s Urban Tree Canopy Assessment (2018), Resource Analysis (2019), and Urban Forest Management Plan (website?)"
+                "For more information, see Tracy’s Urban Tree Canopy Assessment (2018), Resource Analysis (2019), and Urban Forest Management Plan."
             ]
         },
         "slide2": {
@@ -334,52 +334,10 @@
 
             "Chart table or some sort of graphic here",
 
-            "<i>Funds for this project were provided by CalFire</i>"
-            
-            ]
-        },
-        "slide8": {
-            "Title": "******What Do We Want?",
-            "Subtitle": "******Managing for the Future Forest",
-            "paragraphTitle": "",
-            "MapAttributes": {
-                "viewType": "map",
-                "MapCenter": [-122.035534, 47.616567],
-                "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer8"],
-                "searchLayer": "Layer1",
-                "searchFld": "",
-                "searchAttr": ""
-            },
-            "navPanelContent": [
-            "******In general, a sustainable urban forest is a forest in which the trees are of different ages and diverse with species well-suited to site conditions, and that are insect and disease resistant and low maintenance. A tree population meeting these criteria is sustainable, resilient, and produces maximum social, economic, and ecological benefits for the community.",
-            "******<div class='quote'>'We cannot separate sustainable urban forests from the people who live in and around them. Sustainable urban forests are not born, they are made. They do not arise at random, but result from a community-wide commitment to their creation and management.  Obtaining the commitment of a broad community, of numerous constituencies, cannot be dictated or legislated. It must arise out of compromise and respect.'<br> -- Clark, et. al., A Model of Urban Forest Sustainability</div>",
-            "******In recent months, the City has conducted a public opinion survey and worked with consultants to explore all the ways that the City and residents connect with urban forestry issues.  By the autumn of 2018, this page will be updated with summary positions that will help the city realize its vision for the future forest in Sammamish."
-            ]
-        },
-        "slide9": {
-            "Title": "******Sammamish’s UFMP",
-            "Subtitle": "******Next Steps",
-            "paragraphTitle": "",
-            "MapAttributes": {
-                "viewType": "detailed",
-                "MapCenter": [-122.035534, 47.616567],
-                "Zoom" : 13,
-                "featureArray": [
-                    "<div class='embed-responsive embed-responsive-16by9'><iframe class='embed-responsive-item' src='/img/bear.mp4' allowfullscreen></iframe> </div>"
-                ],
-                "searchLayer": "Layer1",
-                "searchFld": "",
-                "searchAttr": ""
-            },
-            "navPanelContent": [
-            "*******’s Urban Forest Management Plan should be considered a “living” document that needs everyone’s input and action. Following principles of adaptive management, the plan will provide opportunities for engagement and adjustment through cyclical updates.",
-            "*******When the UFMP is fully developed, return to this page to learn about the summary actions and goals the City will be pursuing in order to realize the community vision. If you have questions or suggestions for better managing and growing our city’s urban forest, please contact:",
-            "*******David Goodman, Senior Management Analyst",
-            "(000) 000-0000, email@email.us",
-            "*******<a href=''>Urban Forest Managment Plan</a>",
-            "*******<div class='lowlight'>Funds for this project were provided by CalFire.</div>",
+            "<div class='lowlight'>Funds for this project were provided by CalFire.</div>",
             "<img class='partner_logos' src='Img/traceyca/traceyca_partners.png' alt='Partners'>"
+
+            
             ]
         }
     }
