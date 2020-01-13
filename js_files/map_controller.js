@@ -72,7 +72,7 @@ var enableMapControls = function () {
 
     /** zooms to the extent of the given layer */
     zoomToExtent = function (someID) {
-        //console.log(someID);
+        console.log(someID);
         var opts = {
             duration: 1500  // Duration of animation will be 1.5 seconds
         };
@@ -81,8 +81,10 @@ var enableMapControls = function () {
         var zoomFld = mapPoints[someID].searchFld;
         var zoomAttribute = mapPoints[someID].searchAttr;
 
+
         if (zoomTarget !== "") {
             var lookAT = layerFind(zoomTarget); // returns a map layer
+            view.constraints.minZoom = mapLayers[zoomTarget].minzoom;    
 
             if (zoomAttribute !== "") { // only if there is a specific thing to look at
                 var subExpression = zoomFld + " = '" + zoomAttribute + "'";
@@ -112,7 +114,17 @@ var enableMapControls = function () {
 
     buttonLayerShow = function (buttonLayer) {
         layersToTurnOn = [];
-        // console.log(map.layers);
+        // console.log(buttonLayer);
+        // console.log(mapLayers);
+        if (view.zoom != mapLayers[buttonLayer].minzoom) {
+            // view.zoom = 17;
+            var zoomoptions = {duration: 1000};
+            view.goTo({zoom: mapLayers[buttonLayer].minzoom}, zoomoptions);
+        }
+        
+        if (view.constraints.minZoom !=  mapLayers[buttonLayer].minzoom) {
+            view.constraints.minZoom = mapLayers[buttonLayer].minzoom;
+        }
 
         //turn off all of the layers
         map.layers.forEach(layer => {

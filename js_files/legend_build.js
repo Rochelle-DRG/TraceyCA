@@ -1,7 +1,7 @@
 
 // Ideally i dpnt want this hardcoded here, and want to add in a thing to the main thing to send this to this thing, 
 // thing.
-var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA/MapServer/legend?f=pjson";
+var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/legend?f=pjson";
 
     console.log("legend builder called");
 

@@ -87,41 +87,6 @@ var enableMainControls = function() {
         console.log("Showing mobile slide: " + nextMobileID);
     });
 
-    // $('#beaverLakePark').mouseenter(function(){
-    //     highlightBeaverLakePark();
-    // });
-    // $('#beaverLakePark').mouseleave(function(){
-    //     hideHighlight();
-    // });
-
-    // $('#sammamish-commons').mouseenter(function(){
-    //     highlightParkOnHover();
-    // });
-    // $('#sammamish-commons').mouseleave(function(){
-    //     hideHighlight();
-    // });
-
-    $("li").mouseenter(function(){
-    //   alert($(this).attr("value"));
-       var parkValue = $(this).attr("value");
-       highlightParkOnHover(parkValue);
-    });
-    $("li").mouseleave(function(){
-        hideHighlight();
-    });
-    $('#park-list').mouseleave(function(){
-        // alert("mouseoff, reset map");
-        resetZoomAndCenter();
-    });
-    
-    $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-        hideHighlight();
-    })
-
-    // view.on('pointer-move'), function(event){
-    //     console.log("i'm trying");
-    //     // highlightParkOnHover('Sahalee Golf & Country Club')
-    // };
 
 };
 
