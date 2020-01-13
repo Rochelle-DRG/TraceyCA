@@ -3,7 +3,7 @@
       "page_title": "Tracy, California - Urban Forest Management Plan",
       "nav_header_img" : "img/Logo_square_small.jpg",
       "nav_header_text": "Tracy, California",
-      "nav_header_subtext": "Urban Forest Master Plan",
+      "nav_header_subtext": "Urban Forest Management Plan",
       "rest_legend_json_url": "https://gis.davey.com/arcgis/rest/services/Sammamish/SammamishFeatures/MapServer?f=pjson"
     },
     "Layers": {
@@ -33,7 +33,7 @@
                 "Acres: {acres:NumberFormat(places:2)}",
                 "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}",
-                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+                "Maximum Potential Canopy %: {maximum_utc_percent:NumberFormat(places:2)}"
 
             ],
             "order" : 1,
@@ -86,7 +86,7 @@
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}",
                 "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
-                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+                "Maximum Potential Canopy %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
             "order" : 4,
             "minzoom": 13
@@ -106,7 +106,7 @@
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}",
                 "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
-                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+                "Maximum Potential Canopy %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
             "order" : 5,
             "minzoom": 13
@@ -145,7 +145,7 @@
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}",
                 "Preferrable Acres: {preferrable_acres:NumberFormat(places:2)}",
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
-                "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
+                "Maximum Potential Canopy %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
             "order" : 6,
             "minzoom": 10
@@ -160,8 +160,10 @@
             "popup" : true,
             "popupContent": [
                 "",
-                "Distric: {district}",
-                "Maintenance Need: {recommende}"
+                "Common Name: {commonname}",
+                "Botanical Name: {botanicaln}",
+                "Diameter: {dbh} ft"
+
             ],
             "order" : 6,
             "minzoom": 17
@@ -202,8 +204,8 @@
                 "viewType": "map",
                 "MapCenter": [-121.433019, 37.729078],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer2"],
-                "searchLayer": "Layer2",
+                "featureArray": ["Layer1", "Layer8"],
+                "searchLayer": "Layer8",
                 "searchFld": "",
                 "searchAttr": ""
             },
@@ -212,7 +214,7 @@
             "Currently, 7.4% of Tracy is covered by tree canopy. Explore the interactive map to better understand the distribution of trees and canopy across the community.",
             "<img class='graphic' src='img/traceyCA/slide2graphic1.png' >",
             "When commercial and industrial parcels are excluded, Tracy’s park and residential areas have an average canopy cover of 12.9%.",
-            "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO2 ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
+            "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO₂ ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
             "<img  class='graphic' src='img/traceyCA/slide2graphic2.png' >",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
             "<img  class='graphic' src='img/traceyCA/slide1graphic3.png' >",
@@ -246,7 +248,7 @@
             },
             "navPanelContent": [
             "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<img  class='graphic' src='img/traceyCA/slide3graphic1.png' class='graphic'>"
+            "<img  class='graphic' src='img/traceyCA/TraceyCA_HistoricChange.png' class='graphic'>"
             
             ]
         },
@@ -296,9 +298,9 @@
             ]
         },
         "slide6": {
-            "Title": "How do we get there? Future Tree Canopy",
+            "Title": "How we get there: Future Tree Canopy",
             "Subtitle": "",
-            "paragraphTitle": "Potential Tree Canopy",
+            "paragraphTitle": "Prioritizing Available Planting Sites",
             "MapAttributes": {
                 "viewType": "map",
                 "MapCenter": [-122.035534, 47.616567],
