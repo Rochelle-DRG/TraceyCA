@@ -71,7 +71,7 @@ var createMap = function (basemap, zoom, center, containerID) {
             });
 
             // in the 4.14 api the view is a separate decalration, we do that here
-            view = new SceneView({
+            view = new MapView({
                 container: containerID || "mapDiv",
                 center: center || [-121.448637, 37.724050],
                 map: map, // references the map above
