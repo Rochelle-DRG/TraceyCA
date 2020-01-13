@@ -264,7 +264,8 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "<ul>Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides information on the composition and distribution of these trees. There are 135,561 community trees characterized by the following:  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
+            "Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides information on the composition and distribution of these trees. There are 135,561 community trees characterized by the following:",
+            "<ul>  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
             "That the top 5 most commonly planted species represent 42% of Tracy’s community trees. The community has an opportunity to increase resilience by balancing the tree species distribution to rely on a more diverse group of trees.",
             "<img  class='graphic' src='img/traceyCA/slide4graphic1.png' >"
             ]
@@ -285,7 +286,8 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "<ul>Benefits include:<li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365.2 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
+            "Benefits include:",    
+            "<ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365.2 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
             "<img  class='graphic' src='img/traceyCA/slide5graphic1.png' >",    
 
             "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <em>For every $1 invested in community trees, $4.06 are received in benefits.</em> "
@@ -309,7 +311,8 @@
             "navPanelContent": [
             "Tracy has the potential to achieve 45% canopy cover (not accounting for future development). While it’s not realistic to plant trees on all available sites, there is room to grow!",
 
-            "<ul>Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:<li>5,435.3 acres (87.6%) very low priority</li><li>325.2 acres (5.4%) low priority </li><li>197.7 acres (3.2%) moderate priority</li><li>141.6 acres (2.3%) high priority</li><li>107.0 acres (1.7%) very high priority </li></ul>",
+            "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:",
+            "<ul><li>5,435.3 acres (87.6%) very low priority</li><li>325.2 acres (5.4%) low priority </li><li>197.7 acres (3.2%) moderate priority</li><li>141.6 acres (2.3%) high priority</li><li>107.0 acres (1.7%) very high priority </li></ul>",
 
             "<img  class='graphic' src='img/traceyCA/slide6graphic1.png' >" 
             ]
@@ -332,7 +335,6 @@
             "navPanelContent": [
             "Tracy’s Urban Forest Management Plan guides community tree care over the next 20 years. Following principles of adaptive management, the Plan is a “living” document. Community engagement is an integral part of the success of any urban forestry program, and the Plan provides opportunities to routinely review the goals and make adjustments as needed. ",
 
-            "Chart table or some sort of graphic here",
 
             "<div class='lowlight'>Funds for this project were provided by CalFire.</div>",
             "<img class='partner_logos' src='Img/traceyca/traceyca_partners.png' alt='Partners'>"
