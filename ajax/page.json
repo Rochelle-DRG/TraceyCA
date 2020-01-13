@@ -212,12 +212,12 @@
             "navPanelContent": [
             "Tree canopy is the layer of leaves, branches, and stems that cover the ground when viewed from above. Land cover, including tree canopy, is expressed as a percentage (of cover) within the city limits.",
             "Currently, 7.4% of Tracy is covered by tree canopy. Explore the interactive map to better understand the distribution of trees and canopy across the community.",
-            "<img class='graphic' src='img/traceyCA/slide2graphic1.png' >",
+            "<img  src='img/traceyCA/slide2graphic1.png' >",
             "When commercial and industrial parcels are excluded, Tracy’s park and residential areas have an average canopy cover of 12.9%.",
             "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO₂ ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
-            "<img  class='graphic' src='img/traceyCA/slide2graphic2.png' >",
+            "<img src='img/traceyCA/slide2graphic2.png' >",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
-            "<img  class='graphic' src='img/traceyCA/slide1graphic3.png' >",
+            "<img src='img/traceyCA/slide1graphic3.png' >",
             "<div class='pTitle'> Maps: (Tree Canopy Metrics)</div>",
             
             "<button class='button' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button>",
@@ -248,7 +248,7 @@
             },
             "navPanelContent": [
             "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<img  class='graphic' src='img/traceyCA/TraceyCA_HistoricChange.png' class='graphic'>"
+            "<img  src='img/traceyCA/TraceyCA_HistoricChange.png' >"
             
             ]
         },
@@ -290,7 +290,7 @@
             "navPanelContent": [
             "Benefits include:",    
             "<ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365.2 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
-            "<img  class='graphic' src='img/traceyCA/slide5graphic1.png' >",    
+            "<img src='img/traceyCA/slide5graphic1.png' >",    
 
             "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <em>For every $1 invested in community trees, $4.06 are received in benefits.</em> "
                
@@ -316,7 +316,7 @@
             "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:",
             "<ul><li>5,435.3 acres (87.6%) very low priority</li><li>325.2 acres (5.4%) low priority </li><li>197.7 acres (3.2%) moderate priority</li><li>141.6 acres (2.3%) high priority</li><li>107.0 acres (1.7%) very high priority </li></ul>",
 
-            "<img  class='graphic' src='img/traceyCA/slide6graphic1.png' >" 
+            "<img src='img/traceyCA/slide6graphic1.png' >" 
             ]
         },
         "slide7": {
