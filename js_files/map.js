@@ -98,7 +98,7 @@ var createMap = function (basemap, zoom, center, containerID) {
             var layerList = new LayerList({
                 view: view
             });
-            view.ui.add(layerList, {position: "bottom-left"}); // probably only useful for development
+            // view.ui.add(layerList, {position: "bottom-left"}); // probably only useful for development
 
             view.ui.add(basemapToggle, "bottom-right");
             
