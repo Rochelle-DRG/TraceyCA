@@ -16,7 +16,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020
                 var legendTitle = shortName.split('_').join(' ');
                 // console.log(value.layerName);
                 legends.push(
-                    "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+ legendTitle +"</span><ul>"
+                    "<div id='" + shortName + "' class='legend-item-contain'><span class='legend_head'>"+  value.layerName +"</span><ul>"
                 );
                 
                 $.each(value.legend, function(key2, value2){
