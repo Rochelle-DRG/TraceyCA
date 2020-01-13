@@ -16,8 +16,7 @@
             "legend": false,
             "popup" : false,
             "popupContent": [""],
-            "order" : 0,
-            "minzoom": 13
+            "order" : 0
         },
         "Layer2": {
             "title": "Land Use",
@@ -36,8 +35,7 @@
                 "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
 
             ],
-            "order" : 1,
-            "minzoom": 13
+            "order" : 1
         },
         "Layer3": {
             "title": "Priority Planting Level",
@@ -52,8 +50,7 @@
                 "Square Feet: {sqft:NumberFormat(places:2)}",
                 "Priority: {priority:NumberFormat(places:2)}"
             ],
-            "order" : 2,
-            "minzoom": 17
+            "order" : 2
         },
         "Layer4": {
             "title": "Parks",
@@ -69,8 +66,7 @@
                 "Canopy Acres: {canopy_acres:NumberFormat(places:2)}",
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}"
             ],
-            "order" : 3,
-            "minzoom": 13
+            "order" : 3
         },
         "Layer5": {
             "title": "Subdivision",
@@ -88,8 +84,7 @@
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
                 "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
-            "order" : 4,
-            "minzoom": 13
+            "order" : 4
         },
         "Layer6": {
             "title": "Landscape Maintenance Districts",
@@ -108,10 +103,9 @@
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
                 "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
-            "order" : 5,
-            "minzoom": 13
+            "order" : 5
         },
-        
+
         "Layer8": {
             "title": "Land Cover",
             "url": "https://gis.davey.com/arcgis/services/TracyCA/TracyCA_2020/MapServer/WMSServer",
@@ -126,15 +120,14 @@
                 "Area (SQFT): {sqft:NumberFormat(places:2)}",
                 "Canopy %: {canopy_percent:NumberFormat(places:2)}"
             ],
-            "order" : 6,
-            "minzoom": 13
+            "order" : 6
         },
-        
+ 
         "Layer10": {
             "title": "Parcels",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/6",
             "type": "feature",
-            "opacity": 0.1,
+            "opacity": 0.6,
             "layername": "Parcels",
             "legend": true,
             "popup" : true,
@@ -147,8 +140,7 @@
                 "Preferrable %: {preferrable_percent:NumberFormat(places:2)}",
                 "Maximum UTC %: {maximum_utc_percent:NumberFormat(places:2)}"
             ],
-            "order" : 6,
-            "minzoom": 10
+            "order" : 6
         },
         "Layer11": {
             "title": "Tree Inventory",
@@ -163,8 +155,7 @@
                 "Distric: {district}",
                 "Maintenance Need: {recommende}"
             ],
-            "order" : 6,
-            "minzoom": 17
+            "order" : 6
         }
 
 
