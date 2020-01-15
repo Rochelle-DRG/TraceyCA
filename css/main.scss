@@ -57,7 +57,7 @@ p img {
     visibility: hidden;
 }
 .button {
-    background-color: #1d631f; /* Green */
+    background-color: $panel_title;
     border: 1px solid #011b01;
     border-radius: 2px;
     color: white;
