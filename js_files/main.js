@@ -190,6 +190,19 @@ function showGraphic(imageURL) {
         $("#graphic-large-view").addClass("hidden");
         $("#graphic-large").prop("src", "");
     })
-
-
 }; //end showGraphic
+
+
+function changeMainImage(idOfImageDiv, newImageURL){ 
+    let originalImg = $(idOfImageDiv).css('background-image');
+    $(idOfImageDiv).fadeTo('slow', 0.3, function(){
+        $(this).css('background-image', 'url('+newImageURL+')');
+    }).fadeTo('slow', 1);
+
+    //good idea: now change the click event on the button to turn the image back (not implemented here)
+
+}; //end changeMainImage()
+
+function openPDF(pdf){
+    window.open(pdf, '_blank');
+}; //end openPDF
