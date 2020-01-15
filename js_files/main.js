@@ -159,36 +159,37 @@ function setGraphicViews() {
     $(".graphic").click(function (e) {
         e.stopPropagation(); //without this line, the body/second click event will fire too
         var clickedGraphic = $(this);
-
         var imageURL = $(this).attr("src");
         console.log($(this).attr("src"));
         //set img in viewdiv
-        // $("#graphic-large").prop("src", (imageURL + '?' + Math.random()));
         $("#graphic-large").prop("src", imageURL);
-
-        console.log($("#graphic-large").attr("src"));
-
-        
-
-
-
-
+        // console.log($("#graphic-large").attr("src"));
         //unhide viewdiv
         $("#graphic-large-view").removeClass("hidden");
         //remove click event from graphic (otherwise clicking it again will not close the view)
-        $(".graphic").off(); 
-
+        $(".graphic").off();
         $("body").click(function () {
-
             //hide viewdiv
             $("#graphic-large-view").addClass("hidden");
             $("#graphic-large").prop("src", "");
-
             //reset the click event on the graphics
             setGraphicViews();
         })
+    })// end graphic.click
+}; // end setGraphicViews()
 
+function showGraphic(imageURL) {
+    event.stopPropagation(); //without this line, the body/second click event will fire too
 
+    //set img in viewdiv
+    $("#graphic-large").prop("src", imageURL);
+    //unhide viewdiv
+    $("#graphic-large-view").removeClass("hidden");
+    $("body").click(function () {
+        //hide viewdiv
+        $("#graphic-large-view").addClass("hidden");
+        $("#graphic-large").prop("src", "");
     })
-};
 
+
+}; //end showGraphic
