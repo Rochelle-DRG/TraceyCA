@@ -19,8 +19,7 @@ var layout1 = {
       family: 'Raleway, sans-serif'
     },
     showlegend: false,
-    margin:{l:100,t:0},
-    width:420,
+    margin:{l:120,t:0,r:0},
     xaxis: {
         title:'Canopy Cover %',
       tickangle: 0,
@@ -45,11 +44,14 @@ var dataTC = [{
     hoverinfo:"none",
     marker: {
         colors: ['#602d5f','#c4daae','#35602d','#76d2f4','#cea17c']
-      }
+      },
+    rotation: 90,
+    direction:'clockwise',
+    pull:.02
   }];
   
   var layout2 = {
-    margin:{l:100,t:0},
+    margin:{l:25,t:0},
     showlegend: false
   };
   

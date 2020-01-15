@@ -39,7 +39,7 @@ p img {
     // width: 200%;
     height: 700px;
     border-style: solid;
-    border-width: 40px;
+    border-width: 20px;
     border-radius: 30px;
 }
 #graphic-large-view {
@@ -57,7 +57,7 @@ p img {
     visibility: hidden;
 }
 .button {
-    background-color: #1d631f; /* Green */
+    background-color: $panel_title;
     border: 1px solid #011b01;
     border-radius: 2px;
     color: white;
