@@ -248,7 +248,7 @@ p img {
     right: -17px;
     left: 40px;
     padding: 25px;
-    padding-bottom: 300px;
+    padding-bottom: 0px;
     bottom: 0px;
     height: 100%;
     overflow-y: scroll;
