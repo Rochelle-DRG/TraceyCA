@@ -223,14 +223,12 @@
             "<div class='pTitle'> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map</div>",
             "<script src='js_files/graphs.js'></script>",
             
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button>",
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button>",
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer4&quot;)'>Parks</button>",
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer10&quot;)'>Parcels</button>",
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer2&quot;)'>Land Use</button>",
-            "<button class='button' onclick='buttonLayerShow(&quot;Layer6&quot;)'>Landscape Maintenance Districts</button>",
+            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer4&quot;)'>Parks</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer10&quot;)'>Parcels</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer2&quot;)'>Land Use</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer6&quot;)'>Landscape Districts</button></div>",
+
             "<button class='button hidden' >Invisible Button</button>"
             
+            
+
 
             ]
         },

@@ -82,6 +82,23 @@ p img {
   background-color: #3e8e41;
 }
 
+.three-even-rows-grid-container {
+  display: -ms-grid;
+  display: grid;
+  width: 400px;
+  grid-gap: 10px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.grid-of-3-item {
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  width: 125px;
+  height: 60px;
+}
+
 .esri-legend__layer-caption {
   display: none !important;
 }
