@@ -212,13 +212,16 @@
             "navPanelContent": [
             "Tree canopy is the layer of leaves, branches, and stems that cover the ground when viewed from above. Land cover, including tree canopy, is expressed as a percentage (of cover) within the city limits.",
             "Currently, 7.4% of Tracy is covered by tree canopy. Explore the interactive map to better understand the distribution of trees and canopy across the community.",
+            "<div id='myDivTC'style='width:90%;height:300px;'></div>",
             "<img  src='img/traceyCA/slide2graphic1.png' >",
             "When commercial and industrial parcels are excluded, Tracy’s park and residential areas have an average canopy cover of 12.9%.",
             "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO₂ ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
             "<img src='img/traceyCA/slide2graphic2.png' >",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
+            "<div id='myDivMun'style='width:90%;height:300px;'></div>",
             "<img src='img/traceyCA/slide1graphic3.png' >",
             "<div class='pTitle'> Maps: (Tree Canopy Metrics)</div>",
+            "<script src='js_files/graphs.js'></script>",
             
             "<button class='button' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button>",
             "<button class='button' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button>",

@@ -454,5 +454,8 @@ p img {
     top: 0px;
     right: 0px;
   }
+  span.esri-popup__action-text {
+    overflow: visible;
+  }
 }
 /*# sourceMappingURL=main.css.map */
