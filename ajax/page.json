@@ -318,7 +318,7 @@
 
             "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:",
             "<ul><li>5,435 acres (87.6%) very low priority</li><li>325 acres (5.4%) low priority </li><li>198 acres (3.2%) moderate priority</li><li>142 acres (2.3%) high priority</li><li>107 acres (1.7%) very high priority </li></ul>",
-
+            "<div id='pieFP'style='width:90%;height:300px;'></div>",
             "<img src='img/traceyCA/1_priority_Pie.png' >" 
             ]
         },

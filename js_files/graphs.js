@@ -203,17 +203,31 @@ var dataEB = [{
   textposition: "auto",
   hoverinfo:"label+percent",
   marker: {
-      colors: ['#602d5f','#c4daae','#35602d','#76d2f4','#cea17c']
+      colors: ['#35602d','#c11a38','#74d0f4','#301e54','#cd9f79']
     },
   rotation: 90,
   direction:'clockwise',
   pull:.02
 }];
 
-var pie1 = {
-  margin:{l:0,t:20},
-  showlegend: false,
-  width:400
-};
-
 Plotly.newPlot('pieEB', dataEB, pie1,{displayModeBar: false,responsive: true});
+
+//slide 6
+
+var dataFP = [{
+  values: [87.57,5.24,3.19,2.28,1.72],
+  labels: ['<b>Very Low</b>', '<b>Low</b>', '<b>Moderate</b>','<b>High</b>','<b>Very High</b>'],
+  text:['5,435.3 acres','325.2 acres','197.7 acres','141.6 acres','107.0 acers'],
+  type: 'pie',
+  textinfo: "label+text",
+  textposition: "auto",
+  hoverinfo:"label+percent",
+  marker: {
+      colors: ['#9900cc','#cc00ff','#ffff00','#ffc000','#ff0000']
+    },
+  rotation: 90,
+  direction:'clockwise',
+  pull:.05
+}];
+
+Plotly.newPlot('pieFP', dataFP, pie1,{displayModeBar: false,responsive: true});
