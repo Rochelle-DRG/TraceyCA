@@ -212,16 +212,15 @@
             "navPanelContent": [
             "Tree canopy is the layer of leaves, branches, and stems that cover the ground when viewed from above. We can see that Tracy’s urban tree canopy is lower than surrounding communities within the region. Land cover, including tree canopy, is expressed as a percentage (of cover) within the city limits.",
             "Currently, 7.4% of Tracy is covered by tree canopy. Explore the interactive map to better understand the distribution of trees and canopy across the community.",
-            "<div id='myDivTC'style='width:90%;height:300px;'></div>",
-            "<img  src='img/traceyCA/slide2graphic1.png' >",
+            "<div id='pieTC'style='width:90%;height:300px;'></div>",
             "When commercial and industrial parcels are excluded, Tracy’s park and residential areas have an average canopy cover of 12.9%.",
             "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO₂ ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
-            "<img src='img/traceyCA/slide2graphic2.png' >",
+            "<div id='pieCO2'style='width:90%;height:300px;'></div>",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
-            "<div id='myDivMun'style='width:90%;height:300px;'></div>",
-            "<img src='img/traceyCA/slide1graphic3.png' >",
+            "<div id='barMun'style='width:90%;height:300px;'></div>",
             "<div class='pTitle'> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map</div>",
             "<script src='js_files/graphs.js'></script>",
+            "<script src='js_files/modal.js'></script>",
             
             "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer4&quot;)'>Parks</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer10&quot;)'>Parcels</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer2&quot;)'>Land Use</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer6&quot;)'>Landscape Districts</button></div>",
 
@@ -249,7 +248,7 @@
             },
             "navPanelContent": [
             "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<img  src='img/traceyCA/TraceyCA_HistoricChange.png' >"
+            "<div id='HisCha'style='width:90%;height:300px;'></div>"
             
             ]
         },
@@ -270,7 +269,7 @@
             "Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides information on the composition and distribution of these trees. There are 135,561 community trees characterized by the following:",
             "<ul>  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
             "That the top 5 most commonly planted species represent 42% of Tracy’s community trees. The community has an opportunity to increase resilience by balancing the tree species distribution to rely on a more diverse group of trees.",
-            "<img  class='graphic' src='img/traceyCA/slide4graphic1.png' >"
+            "<div id='treeInv'style='width:90%;height:500px;'></div>"
             ]
         },
         "slide5": {
@@ -291,6 +290,7 @@
             "navPanelContent": [
             "Benefits include:</br><ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",    
             "</br>",
+            "<div id='pieEB'style='width:90%;height:300px;'></div>",
             "<img src='img/traceyCA/slide5graphic1.png' >",    
             "</br>",
             "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <b>For every $1 invested in community trees, $4.06 are received in benefits.</b> "
