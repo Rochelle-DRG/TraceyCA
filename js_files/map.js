@@ -164,6 +164,44 @@ var createMap = function (basemap, zoom, center, containerID) {
                 map.layers.add(newLayer, item.order);
 
             });  //end .each
+            let floodLayerView;
+            const seasonsNodes = document.querySelectorAll(`.season-item`);
+        const seasonsElement = document.getElementById("seasons-filter");
 
+        // click event handler for seasons choices
+        seasonsElement.addEventListener("click", filterBySeason);
+
+        // User clicked on Winter, Spring, Summer or Fall
+        // set an attribute filter on flood warnings layer view
+        // to display the warnings issued in that season
+        function filterBySeason(event) {
+          const selectedSeason = event.target.getAttribute("data-season");
+          floodLayerView.filter = {
+            where: "Season = '" + selectedSeason + "'"
+          };
+        }
+
+        view.whenLayerView(layer).then(function(layerView) {
+          // flash flood warnings layer loaded
+          // get a reference to the flood warnings layerview
+          floodLayerView = layerView;
+
+          // set up UI items
+          seasonsElement.style.visibility = "visible";
+          const seasonsExpand = new Expand({
+            view: view,
+            content: seasonsElement,
+            expandIconClass: "esri-icon-filter",
+            group: "top-left"
+          });
+          //clear the filters when user closes the expand widget
+          seasonsExpand.watch("expanded", function() {
+            if (!seasonsExpand.expanded) {
+              floodLayerView.filter = null;
+            }
+          });
+          view.ui.add(seasonsExpand, "top-left");
+          view.ui.add("titleDiv", "top-right");
+        });
         }) /*end require & function*/;
 }; // end createMap
