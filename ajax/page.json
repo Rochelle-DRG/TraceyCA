@@ -376,7 +376,7 @@
             "navPanelContent": [
             "Tracy’s Urban Forest Management Plan guides community tree care over the next 20 years. Following principles of adaptive management, the Plan is a “living” document. Community engagement is an integral part of the success of any urban forestry program, and the Plan provides opportunities to routinely review the goals and make adjustments as needed. ",
 
-            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Focus Area 1</button><button class='button grid-of-3-item' onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Focus Area 2</button><button class='button grid-of-3-item'onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Focus Area 3</button></div>",
+            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='openPDF(&quot;img/dummy.pdf&quot;)' >Focus Area 1</button><button class='button grid-of-3-item' onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Focus Area 2</button><button class='button grid-of-3-item'onclick='openPDF(&quot;img/anothertest.pdf&quot;)' >Focus Area 3</button></div>",
 
 
 
