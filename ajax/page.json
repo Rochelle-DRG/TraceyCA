@@ -151,7 +151,7 @@
             "minzoom": 10
         },
         "Layer11": {
-            "title": "Tree Inventory",
+            "title": "Tree_Inventory",
             "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/8",
             "type": "feature",
             "opacity": 0.6,
