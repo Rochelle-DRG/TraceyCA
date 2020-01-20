@@ -167,8 +167,47 @@
             ],
             "order" : 6,
             "minzoom": 17
-        }
+        },
 
+        "Layer12": {
+            "title": "Vacant Sites",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/8",
+            "type": "feature",
+            "opacity": 0.6,
+            "layername": "Tree Inventory",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Common Name: {commonname}",
+                "Botanical Name: {botanicaln}",
+                "Diameter: {dbh} ft"
+
+            ],
+            "order" : 6,
+            "minzoom": 13,
+            "filter": "CommonName LIKE '%SITE'"
+        },
+
+        "Layer13": {
+            "title": "Trees",
+            "url": "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020/MapServer/8",
+            "type": "feature",
+            "opacity": 0.6,
+            "layername": "Tree Inventory",
+            "legend": true,
+            "popup" : true,
+            "popupContent": [
+                "",
+                "Common Name: {commonname}",
+                "Botanical Name: {botanicaln}",
+                "Diameter: {dbh} ft"
+
+            ],
+            "order" : 6,
+            "minzoom": 13,
+            "filter": "CommonName NOT LIKE '%SITE'"
+        }
 
 
     },
@@ -219,7 +258,7 @@
             "<div id='pieCO2'style='width:90%;height:300px;'></div>",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
             "<div id='barMun'style='width:90%;height:300px;'></div>",
-            "<div class='pTitle'> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map</div>",
+            "<div> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map</div>",
             "<script src='js_files/graphs.js'></script>",
             "<script src='js_files/modal.js'></script>",
             
@@ -262,7 +301,7 @@
                 "viewType": "map",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer11"],
+                "featureArray": ["Layer1","Layer11"],
                 "searchLayer": "Layer1",
                 "searchFld": "",
                 "searchAttr": ""
@@ -271,7 +310,8 @@
             "Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides information on the composition and distribution of these trees. There are 135,561 community trees characterized by the following:",
             "<ul>  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
             "That the top 5 most commonly planted species represent 42% of Tracy’s community trees. The community has an opportunity to increase resilience by balancing the tree species distribution to rely on a more diverse group of trees.",
-            "<div id='treeInv'style='width:90%;height:500px;'></div>"
+            "<div id='treeInv'style='width:90%;height:600px;'></div>",
+            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer12&quot;)' >Planting Sites</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer13&quot;)'>Current Trees</button></div>"
             ]
         },
         "slide5": {
@@ -292,8 +332,7 @@
             "navPanelContent": [
             "Benefits include:</br><ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",    
             "</br>",
-            "<div id='pieEB'style='width:90%;height:300px;'></div>",
-            "<img src='img/traceyCA/1_benefits_Pie.png' >",    
+            "<div id='pieEB'style='width:90%;height:300px;'></div>",   
             "</br>",
             "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <b>For every $1 invested in community trees, $4.06 are received in benefits.</b> "
                
@@ -318,8 +357,7 @@
 
             "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:",
             "<ul><li>5,435 acres (87.6%) very low priority</li><li>325 acres (5.4%) low priority </li><li>198 acres (3.2%) moderate priority</li><li>142 acres (2.3%) high priority</li><li>107 acres (1.7%) very high priority </li></ul>",
-            "<div id='pieFP'style='width:90%;height:300px;'></div>",
-            "<img src='img/traceyCA/1_priority_Pie.png' >" 
+            "<div id='pieFP'style='width:90%;height:300px;'></div>"
             ]
         },
         "slide7": {
@@ -331,7 +369,7 @@
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
                 "featureArray": [
-                    "<div id='ufmp-main-img' style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot; ') class='image'></div>"                
+                    "<div id='ufmp-main-img' style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot; ') class='image'></div>"        
                 ],
                 "searchLayer": "",
                 "searchFld": "",
@@ -340,7 +378,7 @@
             "navPanelContent": [
             "Tracy’s Urban Forest Management Plan guides community tree care over the next 20 years. Following principles of adaptive management, the Plan is a “living” document. Community engagement is an integral part of the success of any urban forestry program, and the Plan provides opportunities to routinely review the goals and make adjustments as needed. ",
 
-            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='showGraphic(&quot;img/demo1.jpeg&quot;)' >Open Graphic</button><button class='button grid-of-3-item' onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Open PDF</button><button class='button grid-of-3-item' onclick='changeMainImage( &quot;#ufmp-main-img&quot; , &quot;img/demo3.jpg&quot;)' >Change Image</button></div>",
+            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='openPDF(&quot;img/dummy.pdf&quot;)' >Focus Area 1</button><button class='button grid-of-3-item' onclick='openPDF(&quot;img/test_pdf.pdf&quot;)' >Focus Area 2</button><button class='button grid-of-3-item'onclick='openPDF(&quot;img/anothertest.pdf&quot;)' >Focus Area 3</button></div>",
 
 
 

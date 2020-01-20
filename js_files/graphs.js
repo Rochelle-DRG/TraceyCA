@@ -50,7 +50,9 @@ var dataTC = [{
   }];
   
   var pie1 = {
-    margin:{l:0,t:20},
+    margin:{l:0,t:0,r:100,b:10},
+    width:300,
+    height:300,
     showlegend: false,
     width:400
   };
@@ -59,7 +61,7 @@ var dataTC = [{
 
   var dataCO2 = [{
     values: [81.8,15.4,1.6,1.2,.01],
-    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
+    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater <br>Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
     type: 'pie',
     textinfo: "label",
     textposition: "auto",
@@ -169,7 +171,7 @@ var dataTreeInv = [{
     }
 }];
 var bar2 = {
-  title:{text:'% of Inventory'},
+  title:{text:'Percent of Inventory'},
   font:{
     family: 'Raleway, sans-serif'
   },
@@ -196,38 +198,40 @@ Plotly.newPlot('treeInv', dataTreeInv, bar2, {displayModeBar: false,responsive: 
 
 var dataEB = [{
   values: [71.28,16.56,8.20,3.17,0.78],
-  labels: ['<b>Aesthetic/Other</b>', '<b>Energy</b>', '<b>Air Quality</b>','<b>Stormwater Runoff</b>','<b>CO<sub>2</sub> Sequestered</b>'],
+  labels: ['<b>Aesthetic/Other</b>', '<b>Energy</b>', '<b>Air Quality</b>','<b>Stormwater <br>Runoff</b>','<b>CO<sub>2</sub><br> Sequestered</b>'],
   text:['$4,078,117','$947,243','$469,360','$181,658','$16,171'],
   type: 'pie',
   textinfo: "label+text",
   textposition: "auto",
   hoverinfo:"label+percent",
   marker: {
-      colors: ['#35602d','#c11a38','#74d0f4','#301e54','#cd9f79']
+      colors: ['#35602d','#c11a38','#74d0f4','#301e54','#cfa27d']
     },
   rotation: 90,
   direction:'clockwise',
   pull:.02
 }];
 
+
 Plotly.newPlot('pieEB', dataEB, pie1,{displayModeBar: false,responsive: true});
 
-//slide 6
+//Slide 6
 
 var dataFP = [{
   values: [87.57,5.24,3.19,2.28,1.72],
   labels: ['<b>Very Low</b>', '<b>Low</b>', '<b>Moderate</b>','<b>High</b>','<b>Very High</b>'],
-  text:['5,435.3 acres','325.2 acres','197.7 acres','141.6 acres','107.0 acers'],
+  text:['5,435.3 acres','325.2 acres','197.7 acres','141.6 acres','107.0 acres'],
   type: 'pie',
   textinfo: "label+text",
   textposition: "auto",
   hoverinfo:"label+percent",
   marker: {
-      colors: ['#9900cc','#cc00ff','#ffff00','#ffc000','#ff0000']
+      colors: ['#9900cc','#cc00ff','#ffff00','#ffbe01','#ff0000']
     },
   rotation: 90,
   direction:'clockwise',
-  pull:.05
+  pull:.09
 }];
+
 
 Plotly.newPlot('pieFP', dataFP, pie1,{displayModeBar: false,responsive: true});

@@ -204,5 +204,6 @@ function changeMainImage(idOfImageDiv, newImageURL){
 }; //end changeMainImage()
 
 function openPDF(pdf){
-    window.open(pdf, '_blank');
+    $( "div#ufmp-main-img" ).replaceWith( "<iframe src= '' width=100% height=100% id='iframe'></iframe>" );
+    document.getElementById('iframe').src = pdf
 }; //end openPDF
