@@ -32,6 +32,7 @@ var buildLegend = function() {
             
         });
         return legends;
+        console.log(legends);
         
     };
 
@@ -73,6 +74,7 @@ var buildLegend = function() {
     legendToggle = function(){
         $(".legend-wrapper").toggle("slow");
         $(".legendBttn").toggleClass("open");
+        console.log("toggle")
     };
 
 };
