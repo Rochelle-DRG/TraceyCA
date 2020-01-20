@@ -50,7 +50,9 @@ var dataTC = [{
   }];
   
   var pie1 = {
-    margin:{l:0,t:20},
+    margin:{l:0,t:0,r:100,b:10},
+    width:300,
+    height:300,
     showlegend: false,
     width:400
   };
@@ -59,7 +61,7 @@ var dataTC = [{
 
   var dataCO2 = [{
     values: [81.8,15.4,1.6,1.2,.01],
-    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
+    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater <br>Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
     type: 'pie',
     textinfo: "label",
     textposition: "auto",
@@ -196,7 +198,7 @@ Plotly.newPlot('treeInv', dataTreeInv, bar2, {displayModeBar: false,responsive: 
 
 var dataEB = [{
   values: [71.28,16.56,8.20,3.17,0.78],
-  labels: ['<b>Aesthetic/Other</b>', '<b>Energy</b>', '<b>Air Quality</b>','<b>Stormwater Runoff</b>','<b>CO<sub>2</sub> Sequestered</b>'],
+  labels: ['<b>Aesthetic/Other</b>', '<b>Energy</b>', '<b>Air Quality</b>','<b>Stormwater <br>Runoff</b>','<b>CO<sub>2</sub><br> Sequestered</b>'],
   text:['$4,078,117','$947,243','$469,360','$181,658','$16,171'],
   type: 'pie',
   textinfo: "label+text",
