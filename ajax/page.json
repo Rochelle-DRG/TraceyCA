@@ -206,7 +206,7 @@
             ],
             "order" : 6,
             "minzoom": 13,
-            "filter": "estvalue > 0"
+            "filter": "CommonName NOT LIKE '%SITE'"
         }
 
 
@@ -299,7 +299,7 @@
                 "viewType": "map",
                 "MapCenter": [-122.035534, 47.616567],
                 "Zoom" : 13,
-                "featureArray": ["Layer1", "Layer11"],
+                "featureArray": ["Layer1","Layer11"],
                 "searchLayer": "Layer1",
                 "searchFld": "",
                 "searchAttr": ""
@@ -309,7 +309,7 @@
             "<ul>  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
             "That the top 5 most commonly planted species represent 42% of Tracy’s community trees. The community has an opportunity to increase resilience by balancing the tree species distribution to rely on a more diverse group of trees.",
             "<div id='treeInv'style='width:90%;height:600px;'></div>",
-            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer12&quot;)' >Vacant Sites</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer13&quot;)'>Current Trees</button></div>"
+            "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer12&quot;)' >Planting Sites</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer13&quot;)'>Current Trees</button></div>"
             ]
         },
         "slide5": {
