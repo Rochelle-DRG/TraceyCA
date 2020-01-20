@@ -169,7 +169,7 @@ var dataTreeInv = [{
     }
 }];
 var bar2 = {
-  title:{text:'% of Inventory'},
+  title:{text:'Percent of Inventory'},
   font:{
     family: 'Raleway, sans-serif'
   },

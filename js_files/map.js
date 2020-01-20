@@ -144,7 +144,8 @@ var createMap = function (basemap, zoom, center, containerID) {
                         labelsVisible: true,
                         legendEnabled: item.legend,
                         outfields: ["*"],
-                        popupTemplate: template
+                        popupTemplate: template,
+                        definitionExpression: item.filter
                     });
 
                     /** Finally add a non raster layer with no popup */
