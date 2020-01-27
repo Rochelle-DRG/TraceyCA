@@ -115,7 +115,7 @@ p img {
 }
 
 .esri-popup__main-container {
-  max-width: 310px;
+  max-width: 300px;
 }
 
 .esri-popup__content {
@@ -337,7 +337,7 @@ p img {
     font-size: 0.9em;
   }
   .navTitle {
-    font-family: 'Bellefair';
+    font-weight: bold;
     font-size: 1.6em;
     text-align: left;
     padding-top: 100px;
@@ -349,6 +349,7 @@ p img {
     margin-bottom: -20px;
   }
   .navTitleBubble {
+    font-weight: bold;
     width: 100%;
     border-radius: 5px;
     padding: 12px 0px;
@@ -378,6 +379,7 @@ p img {
     padding: 25px;
   }
   .lowlight {
+    font-style: italic;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     padding: 5px;

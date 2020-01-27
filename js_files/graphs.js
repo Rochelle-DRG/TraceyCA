@@ -1,5 +1,50 @@
+//Slide 1
+  var dataTC = [{
+    values: [37.9,10.6,7.4,.8,43.3],
+    labels: ['<b>Impervious Surfaces</b>', '<b>Grass/Low <br>Vegetation</b>', '<b>Tree Canopy</b>','<b>Open Water</b>','<b>Bare Soil</b>'],
+    type: 'pie',
+    textinfo: "label",
+    textposition: "auto",
+    hoverinfo:"label+percent",
+    marker: {
+        colors: ['#602d5f','#c4daae','#35602d','#76d2f4','#cea17c']
+      },
+    rotation: 90,
+    direction:'clockwise',
+    pull:.02
+  }];
+  
+  var pie1 = {
+    margin:{l:60,t:0,r:100,b:10},
+    width:300,
+    height:300,
+    showlegend: false,
+    width:400
+  };
+  
+Plotly.newPlot('pieTC', dataTC, pie1,{displayModeBar: false,responsive: true});
+
+  var dataCO2 = [{
+    values: [81.8,15.4,1.6,1.2,.01],
+    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater <br>Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
+    type: 'pie',
+    textinfo: "label",
+    textposition: "auto",
+    hoverinfo:"label+percent",
+    marker: {
+        colors: ['#827030','#301e54','#35602d','#c3d9ac','#ffffff']
+      },
+    rotation: 110,
+    direction:'clockwise',
+    pull:.02
+  }];
+  
+  
+Plotly.newPlot('pieCO2', dataCO2, pie1,{displayModeBar: false,responsive: true});
+  
 //Graphs for slide 2
-var dataMun = [{
+
+  var dataMun = [{
     x:[7.4,14.5,15.7,19.2,21.3],
     y:['Tracy CA  ','Woodland, CA  ','Roseville, CA  ','Sacramento, CA  ','Patterson, CA  ',],
     type: 'bar',
@@ -11,7 +56,7 @@ var dataMun = [{
   }];
   
   
-var bar1 = {
+  var bar1 = {
     font:{
       family: 'Raleway, sans-serif'
     },
@@ -34,48 +79,6 @@ var bar1 = {
   
 Plotly.newPlot('barMun', dataMun, bar1, {displayModeBar: false,responsive: true});
 
-var dataTC = [{
-    values: [37.9,10.6,7.4,.8,43.3],
-    labels: ['<b>Impervious Surfaces</b>', '<b>Grass/Low <br>Vegetation</b>', '<b>Tree Canopy</b>','<b>Open Water</b>','<b>Bare Soil</b>'],
-    type: 'pie',
-    textinfo: "label",
-    textposition: "auto",
-    hoverinfo:"label+percent",
-    marker: {
-        colors: ['#602d5f','#c4daae','#35602d','#76d2f4','#cea17c']
-      },
-    rotation: 90,
-    direction:'clockwise',
-    pull:.02
-  }];
-  
-  var pie1 = {
-    margin:{l:0,t:0,r:100,b:10},
-    width:300,
-    height:300,
-    showlegend: false,
-    width:400
-  };
-  
-  Plotly.newPlot('pieTC', dataTC, pie1,{displayModeBar: false,responsive: true});
-
-  var dataCO2 = [{
-    values: [81.8,15.4,1.6,1.2,.01],
-    labels: ['<b>CO<sub>2</sub> Sequestered</b>', '<b>Stormwater <br>Runoff</b>', '<b>O<sub>3</sub></b>','<b>PM<sub>10</sub></b>','<b>CO,NO<sub>2</sub>,SO<sub>2</sub></b>'],
-    type: 'pie',
-    textinfo: "label",
-    textposition: "auto",
-    hoverinfo:"label+percent",
-    marker: {
-        colors: ['#827030','#301e54','#35602d','#c3d9ac','#ffffff']
-      },
-    rotation: 110,
-    direction:'clockwise',
-    pull:.02
-  }];
-  
-  
-  Plotly.newPlot('pieCO2', dataCO2, pie1,{displayModeBar: false,responsive: true});
 
 //slide 3
 

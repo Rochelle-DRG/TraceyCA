@@ -328,10 +328,8 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Benefits include:</br><ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",    
-            "</br>",
-            "<div id='pieEB'style='width:90%;height:300px;'></div>",   
-            "</br>",
+            "Benefits include:</br><ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
+            "<div id='pieEB'style='width:90%;height:300px;'></div>",
             "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <b>For every $1 invested in community trees, $4.06 are received in benefits.</b> "
                
 
