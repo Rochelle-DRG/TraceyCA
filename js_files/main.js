@@ -204,6 +204,22 @@ function changeMainImage(idOfImageDiv, newImageURL){
 }; //end changeMainImage()
 
 function openPDF(pdf){
+    //"<div id='ufmp-main-img' style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot; ') class='image'></div>" 
+    if (document.getElementById('ufmp-main-img')!==null){
     $( "div#ufmp-main-img" ).replaceWith( "<iframe src= '' width=100% height=100% id='iframe'></iframe>" );
     document.getElementById('iframe').src = pdf
+    console.log("pdf up")
+    }else if (document.getElementById('iframe').src.includes(pdf) == false){
+        document.getElementById('iframe').src = pdf
+        console.log('pdf switched')
+    }else if(document.getElementById('iframe').src.includes(pdf) == true){
+        $( "#iframe" ).replaceWith( "<div id='ufmp-main-img' style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot; ') class='image'></div>");
+        console.log("picture back")
+    }else {
+        console.log('somethings wrong')
+    }
 }; //end openPDF
+
+function backtopic(){
+    $( "#iframe" ).replaceWith( "<div id='ufmp-main-img' style='background-image:url(&quot;img/traceyCA/slide7img1.jpg&quot; ') class='image'></div>" );
+}

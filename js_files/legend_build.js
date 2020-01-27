@@ -10,7 +10,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020
             // console.log("legend:",data);
             var legends = [];
             legends.push("<div class='legend-wrapper'>");
-            console.log(legends)
+            //console.log(legends)
             $.each(data.layers, function(key, value) {
                 // console.log("value:",value);
                 var shortName = value.layerName.replace(/\s/g,'');
@@ -45,7 +45,7 @@ var legendURL = "https://gis.davey.com/arcgis/rest/services/TracyCA/TracyCA_2020
             });
             legends.push("</div>");
             
-        console.log(legends);
+        //console.log(legends);
 
             // adding the new legend div to the main body of the page
             $( "<div/>", {
