@@ -157,5 +157,41 @@ var enableMapControls = function () {
 
 
     }//end buttonLayerShow
+    buttonLayerShowNoZoom = function (buttonLayer) {
+        layersToTurnOn = [];
+        // console.log(buttonLayer);
+        // console.log(mapLayers);
+
+        //turn off all of the layers
+        map.layers.forEach(layer => {
+            layer.visible = false
+        });
+
+        //get the border layer and button layer
+        var turnOnLayers = map.layers.filter(function (layer) {
+            return (layer.name == "Layer1" || layer.name == buttonLayer)
+        });
+
+        console.log(turnOnLayers);
+        //turn them on
+        turnOnLayers.forEach(layer => {
+            layer.visible = true;
+        });
+
+        // Turn off all legends
+        $(".legend-item-contain").hide();
+
+        var showLayer = layerFind(buttonLayer); // "layer1" will return the map layer object with that same name
+        // console.log(showLayer);
+
+        // now we gotta work out what divs are shown in the legend div
+        if (showLayer.legendEnabled === true) {
+            var shortName = (showLayer.title).replace(/\s/g, '');
+            // console.log("#" + shortName);
+            $("#" + shortName).toggle("slow");
+        }
+
+
+    }//end buttonLayerShowNoZoom
 
 };
