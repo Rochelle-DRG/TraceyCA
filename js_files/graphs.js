@@ -45,8 +45,8 @@ Plotly.newPlot('pieCO2', dataCO2, pie1,{displayModeBar: false,responsive: true})
 //Graphs for slide 2
 
   var dataMun = [{
-    x:[7.4,14.5,15.7,19.2,21.3],
-    y:['Tracy CA  ','Woodland, CA  ','Roseville, CA  ','Sacramento, CA  ','Patterson, CA  ',],
+    x:[12.9,14.5,15.7,19.2,21.3],
+    y:['Tracy CA*  ','Woodland, CA  ','Roseville, CA  ','Sacramento, CA  ','Patterson, CA  ',],
     type: 'bar',
     orientation: 'h',
     width: .8,
@@ -179,17 +179,17 @@ var bar2 = {
     family: 'Raleway, sans-serif'
   },
   showlegend: false,
-  margin:{l:175,t:30,r:50},
+  margin:{l:200,t:30,r:50},
   width:400,
   height:600,
   xaxis: {
-    title:'',
+    title:'Tree Percentage',
     tickangle: 0,
     ticksuffix:'%',
     tickvals:[0.0,5.0,10.0,15.0,20.0,25.0]
   },
   yaxis: {
-      title:'',
+      title:'Species name',
     zeroline: false
   },
   bargap :.5

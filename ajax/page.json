@@ -231,8 +231,8 @@
                 "The trees in Tracy have quite a story to tell!",
                 "Explore the following pages to learn more about the urban forest and our vision for the future.",
                 "Public and privately-owned trees combine to create the urban forest canopy that provides numerous benefits to residents, businesses, students, and visitors. These benefits come from significant contributions to stormwater management, public health,  energy reduction, air pollution, and overall quality of life. These environmental and  socio-economic benefits have the potential to increase over time as trees grow and canopy expands.",
-                "The following pages and interactive maps provide key information about our urban forest. ",
-                "For more information, see Tracy’s Urban Tree Canopy Assessment (2018), Resource Analysis (2019), and Urban Forest Management Plan."
+                "The following pages and interactive maps provide key information about our urban forest. Click on the street map in the top-left corner to help locate your street. ",
+                "For more information, see <a href='img/Tracy.CA_UTC.pdf' target='_blank'>Tracy’s Urban Tree Canopy Assessment (2018)</a>, <a href='img/Tracy, CA Resource Analysis.pdf' target='_blank'>Resource Analysis (2019)</a>, and <a>Urban Forest Management Plan</a>."
             ]
         },
         "slide2": {
@@ -256,8 +256,9 @@
             "Tracy’s tree canopy (public and private trees) is storing 342 million tons of carbon to date and continues to provide $265,755 in annual benefits to air quality and stormwater management, including:<ul><li>13.6 million tons of CO₂ ($217,495)</li><li>5.1 million gallons of intercepted stormwater ($40,798)</li><li>101,228 pounds of abated air pollutants, including carbon monoxide (CO), nitrogen dioxide (NO₂), ozone (O₃), sulfur dioxide (SO₂), and particulate matter (PM₁₀) ($7,462)</li></ul>",
             "<div id='pieCO2'style='width:90%;height:300px;'></div>",
             "How does Tracy’s canopy cover compare to other communities in the Central Valley?",
-            "<div id='barMun'style='width:90%;height:300px;'></div>",
-            "<div> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map</div>",
+            "<div id='barMun'style='width:90%;height:250px;'></div><div class='lowlight'>*Excluding commercial and industrial parcels</div>",
+            "",
+            "<div> Explore Tracy’s tree canopy data by clicking the boxes below to show results from the tree canopy assessment. Clicking the buttons will activate new layers in the map.</div>",
             "<script src='js_files/graphs.js'></script>",
             
             "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer8&quot;)' >Land Cover</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer5&quot;)'>Subdivisions</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer4&quot;)'>Parks</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer10&quot;)'>Parcels</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer2&quot;)'>Land Use</button><button class='button grid-of-3-item' onclick='buttonLayerShow(&quot;Layer6&quot;)'>Landscape Districts</button></div>",
@@ -285,9 +286,8 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Over time trees increase in size, but the increase in canopy cover is also a result of planting trees on existing and newly developed land. ",
-            "<div id='HisCha'style='width:90%;height:300px;'></div>",
-            "<img src='img/traceyCA/TraceyCA_HistoricChange.png' >"
+            "Since  1993,  canopy cover in Tracy has increased 76% and the population has more than doubled. Increased canopy cover can result from existing trees increasing in size or new trees being planted. ",
+            "<div id='HisCha'style='width:90%;height:300px;'></div>"
             
             ]
         },
@@ -305,9 +305,9 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides information on the composition and distribution of these trees. There are 135,561 community trees characterized by the following:",
-            "<ul>  <li>191 unique species <ul><li>83% deciduous broadleaf trees</li><li>10% evergreen broadleaf trees</li></ul></li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
-            "That the top 5 most commonly planted species represent 42% of Tracy’s community trees. The community has an opportunity to increase resilience by balancing the tree species distribution to rely on a more diverse group of trees.",
+            "Community trees are publicly-owned trees managed by the City of Tracy. A community tree inventory provides useful information that helps the city make informed management decisions. There are 135,561 community trees characterized by the following:",
+            "<ul>  <li>191 unique species</li><li>Replacement value of $60.1 million</li><li>20,032 tons stored carbon (CO₂) ($300,490)</li></ul>",
+            "The top 5 most commonly planted species represent 42% of Tracy’s community trees. Tracy has an opportunity to increase species diversity which will create a more resilient community tree resource.",
             "<div id='treeInv'style='width:90%;height:600px;'></div>",
             "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='buttonLayerShowNoZoom(&quot;Layer12&quot;)' >Planting Sites</button><button class='button grid-of-3-item' onclick='buttonLayerShowNoZoom(&quot;Layer13&quot;)'>Current Trees</button></div>"
             ]
@@ -330,7 +330,7 @@
             "navPanelContent": [
             "Benefits include:</br><ul><li>31,172 pounds of abated air pollutants ($469,360)</li><li>23.3 million gallons of intercepted stormwater ($181,658)</li><li>2,967 tons of sequestered carbon (CO₂) ($44,502)</li><li>Decreased electricity use by 4,365 MWh and natural gas use by 18,564 Therms ($947,243)</li><li>Increased property values (over $4 million)</li></ul>",
             "<div id='pieEB'style='width:90%;height:300px;'></div>",
-            "It costs $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <b>For every $1 invested in community trees, $4.06 are received in benefits.</b> "
+            "Tracy invests $1.4 million to manage the community trees each year. The annual net benefit (benefits minus investment) to the community is $5.7 million. <b>For every $1 invested in community trees, $4.06 are received in benefits.</b> "
                
 
             ]
@@ -349,10 +349,10 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Tracy has the potential to achieve 45% canopy cover (not accounting for future development). While it’s not realistic to plant trees on all available sites, there is room to grow!",
+            "Tracy has the potential to achieve 45% canopy cover (not accounting for future development). While it’s not realistic to plant trees on all available sites, there is room to grow.As canopy cover increases, so do the environmental and socioeconomic benefits to the community!",
 
-            "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Most of the land in Tracy has a very low planting priority, but Tracy has land classified into each planting priority:",
-            "<ul><li>5,435 acres (87.6%) very low priority</li><li>325 acres (5.4%) low priority </li><li>198 acres (3.2%) moderate priority</li><li>142 acres (2.3%) high priority</li><li>107 acres (1.7%) very high priority </li></ul>",
+            "Tracy’s prioritized planting plan helps identify locations that would receive the most benefits from the addition of a tree. When trees are planted in the right place, even small increases in canopy cover can have a large impact. Land in Tracy is classified by plating priority, and includes:",
+            "<ul><li>107 acres (1.7%) very high priority </li><li>142 acres (2.3%) high priority</li><li>198 acres (3.2%) moderate priority</li><li>325 acres (5.4%) low priority </li><li>5,435 acres (87.6%) very low priority</li></ul>",
             "<div id='pieFP'style='width:90%;height:300px;'></div>"
             ]
         },
@@ -372,7 +372,7 @@
                 "searchAttr": ""
             },
             "navPanelContent": [
-            "Tracy’s Urban Forest Management Plan guides community tree care over the next 20 years. Following principles of adaptive management, the Plan is a “living” document. Community engagement is an integral part of the success of any urban forestry program, and the Plan provides opportunities to routinely review the goals and make adjustments as needed. ",
+            "Tracy’s Urban Forest Management Plan guides community tree care over the next 20 years. The Plan is a “living” document. Community involvement is an integral part of the success of any urban forestry program, and the Plan provides opportunities to routinely review the goals and make adjustments to ensure the best future outcome.",
             "The goals for Tracy's urban forest were organized into three focus areas. Click on the focus areas below to learn more.",
             "<div class='three-even-rows-grid-container'><button class='button grid-of-3-item' onclick='openPDF(&quot;img/Tracy_FA1_Goal_and_Actions_pages.pdf&quot;)' >Focus Area 1</button><button class='button grid-of-3-item' onclick='openPDF(&quot;img/Tracy_FA2_Goal_and_Actions_pages.pdf&quot;)' >Focus Area 2</button><button class='button grid-of-3-item'onclick='openPDF(&quot;img/Tracy_FA3_Goal_and_Actions_pages.pdf&quot;)' >Focus Area 3</button></div>",
             "<div class='lowlight'><b><i>Funds for this project were provided by CalFire.</i><br><br> Acknowledgements: </b><br><i>Tracy City Council:</i> Robert Rickman, Mayor; Nancy Young, Mayor Pro Tem; Dan Arriola, Council Member; Rhodesia Ransom, Council Member; Veronica Vargas, Council Member; Juana Dement,  Council Member <br><i>City Departments:</i> Public Works, Engineering, Development Services <br><i>Tracy Tree Foundation<br>Tracy Nature Park Advocates<br>PG&E<br>CalFire<br>Davey Resource Group, Inc.<br>Special Thanks to Community Participants</i></div>",

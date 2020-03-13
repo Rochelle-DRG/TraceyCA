@@ -100,7 +100,7 @@ var createMap = function (basemap, zoom, center, containerID) {
             });
             // view.ui.add(layerList, {position: "bottom-left"}); // probably only useful for development
 
-            view.ui.add(basemapToggle, "bottom-right");
+            view.ui.add(basemapToggle, "top-left");
             
             /**adding every layer that is returned from our DB,
              * depending on the layer type we assign it as an imagery layer or featurelayer
